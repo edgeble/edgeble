@@ -1,0 +1,15 @@
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-30%);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+}
+
+.scrolling-icons {
+    background-color: white;
+    display: flex;
+    gap: 40px;
+    animation: scroll-right 40s linear infinite;
+}
