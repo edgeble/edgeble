@@ -10,7 +10,7 @@ export default function ScrollImages() {
                                     .map((item, i) => {
                                         return (
                                             <a href={item.link} key={i} target="_blank">
-                                                <div className="flex flex-col h-auto md:h-80 w-[40vw] md:w-96 justify-start items-start bg-gray-100 mr-2 md:mr-10 mb-10 overflow-hidden hover:shadow-lg">
+                                                <div className="flex flex-col h-auto md:h-80 w-[70vw] md:w-96 justify-start items-start bg-gray-100 mr-2 md:mr-10 mb-10 overflow-hidden hover:shadow-lg">
                                                     <img className="object-cover h-80 w-96 w-auto bg-gray-100" src={`./usecase${i+1}.webp`} />
                                                 </div>
                                             </a>

@@ -126,9 +126,9 @@ export default function Home() {
             className="h-full md:h-screen w-screen">
                 <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
                     <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center">Burgeoning Edge AI</p>
-                    <div className="w-full flex justify-center gap-2 lg:gap-4">
+                    <div className="w-full flex justify-center gap-1 lg:gap-4">
                         <button
-                            className={`text-sm lg:text-lg px-6 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
+                            className={`text-sm lg:text-lg px-4 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
                                 index == 0 ? "text-white bg-black" : "text-gray-800 bg-gray-100"
                             }`}
                             onClick={() => setindex(0)}
@@ -136,7 +136,7 @@ export default function Home() {
                             Discriminative
                         </button>
                         <button
-                            className={`text-sm lg:text-lg px-6 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
+                            className={`text-sm lg:text-lg px-4 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
                                 index == 1 ? "text-white bg-black" : "text-gray-800 bg-gray-100"
                             }`}
                             onClick={() => setindex(1)}
@@ -144,7 +144,7 @@ export default function Home() {
                             Discriminative
                         </button>
                         <button
-                            className={`text-sm lg:text-lg px-6 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
+                            className={`text-sm lg:text-lg px-4 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
                                 index == 2 ? "text-white bg-black" : "text-gray-800 bg-gray-100"
                             }`}
                             onClick={() => setindex(2)}
