@@ -181,7 +181,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="h-full md:h-screen w-screen">
                 <div className="p-8 md:p-12 lg:p-16 w-full">
-                    <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center">What's New</p>
+                    <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center">What&apos;s New</p>
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog1.webp" className="w-full object-contain" />
