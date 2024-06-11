@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import MovingIcons from "./components/MovingIcons";
 import ScrollImages from "./components/ScrollImages";
 import { motion } from "framer-motion"
-
+import Link from "next/link";
 export default function Home() {
     const [index, setindex] = useState(0);
     return (
@@ -35,15 +35,18 @@ export default function Home() {
                         <div className="text-center">
                             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Pre-trained GenAI Accelerator for Drone</h1>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
+                                <Link href="/contact" passHref legacyBehavior>
                                 <a
-                                    href="#"
                                     className="bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-300 transform"
                                 >
                                     Get started
                                 </a>
-                                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                                </Link>
+                                <Link href="/contact" passHref legacyBehavior>
+                                <a className="text-sm font-semibold leading-6 text-gray-900">
                                     Learn more <span aria-hidden="true">→</span>
                                 </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
