@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 export default function Home() {
     const [index, setindex] = useState(0);
-    const router = useRouter()
+    const router = useRouter();
     return (
         <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden">
             <Header />
@@ -39,8 +39,8 @@ export default function Home() {
                                 Pre-trained GenAI Accelerator for Drone
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Accelerate your Edge AI deployments with breakthrough Pre-trained Neural Compute Modules powered by
-                                High Performance, Ultra Vision AI Accelerators
+                                Accelerate your Edge AI deployments with breakthrough Pre-trained Neural Compute Modules powered by High Performance,
+                                Ultra Vision AI Accelerators
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link href="/contact" passHref legacyBehavior>
@@ -140,7 +140,7 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className="h-full md:h-screen w-screen overflow-x-hidden"
             >
-                <div className="w-full flex flex-col justify-center items-center p-8 md:p-12 lg:p-16 2xl:p-48">
+                <div className="w-full flex flex-col justify-center items-center p-8 md:p-12 lg:p-16 2xl:p-48 relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
                         Burgeoning Edge AI
                     </p>
@@ -160,7 +160,7 @@ export default function Home() {
                                 }}
                             >
                                 <div
-                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
                                         index == 0 ? "border-black" : "border-gray-200 hover:border-gray-400"
                                     }`}
                                 >
@@ -168,7 +168,10 @@ export default function Home() {
                                     <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
                                         lorem ipsumSunt commodo elit esse sunt minim.
                                     </p>
-                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${0}`)}>
+                                    <div
+                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
+                                        onClick={() => router.push(`/product/${0}`)}
+                                    >
                                         Learn more <span aria-hidden="true">→</span>
                                     </div>
                                 </div>
@@ -180,7 +183,7 @@ export default function Home() {
                                 }}
                             >
                                 <div
-                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
                                         index == 1 ? "border-black" : "border-gray-200 hover:border-gray-400"
                                     }`}
                                 >
@@ -188,7 +191,10 @@ export default function Home() {
                                     <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
                                         lorem ipsumSunt commodo elit esse sunt minim.
                                     </p>
-                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${1}`)}>
+                                    <div
+                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
+                                        onClick={() => router.push(`/product/${1}`)}
+                                    >
                                         Learn more <span aria-hidden="true">→</span>
                                     </div>
                                 </div>
@@ -200,7 +206,7 @@ export default function Home() {
                                 }}
                             >
                                 <div
-                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
                                         index == 2 ? "border-black" : "border-gray-200 hover:border-gray-400"
                                     }`}
                                 >
@@ -208,7 +214,10 @@ export default function Home() {
                                     <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
                                         lorem ipsumSunt commodo elit esse sunt minim.
                                     </p>
-                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${2}`)}>
+                                    <div
+                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
+                                        onClick={() => router.push(`/product/${2}`)}
+                                    >
                                         Learn more <span aria-hidden="true">→</span>
                                     </div>
                                 </div>
@@ -220,7 +229,7 @@ export default function Home() {
                                 }}
                             >
                                 <div
-                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
                                         index == 3 ? "border-black" : "border-gray-200 hover:border-gray-400"
                                     }`}
                                 >
@@ -228,7 +237,10 @@ export default function Home() {
                                     <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
                                         lorem ipsumSunt commodo elit esse sunt minim.
                                     </p>
-                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${3}`)}>
+                                    <div
+                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
+                                        onClick={() => router.push(`/product/${3}`)}
+                                    >
                                         Learn more <span aria-hidden="true">→</span>
                                     </div>
                                 </div>
@@ -240,7 +252,7 @@ export default function Home() {
                                 }}
                             >
                                 <div
-                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
                                         index == 4 ? "border-black" : "border-gray-200 hover:border-gray-400"
                                     }`}
                                 >
@@ -248,12 +260,27 @@ export default function Home() {
                                     <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
                                         lorem ipsumSunt commodo elit esse sunt minim.
                                     </p>
-                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${4}`)}>
+                                    <div
+                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
+                                        onClick={() => router.push(`/product/${4}`)}
+                                    >
                                         Learn more <span aria-hidden="true">→</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div
+                        className="rotate-30 absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                        aria-hidden="true"
+                    >
+                        <div
+                            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                            style={{
+                                clipPath:
+                                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                            }}
+                        />
                     </div>
                 </div>
             </motion.div>
@@ -269,7 +296,7 @@ export default function Home() {
                 </div>
             </motion.div> */}
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen">
-                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full">
+                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
                         Ecosystem
                     </p>
@@ -281,28 +308,49 @@ export default function Home() {
                         laborum non sint officia. Mollit aliqua proident Lorem tempor sint nostrud occaecat sit. Pariatur dolore sint ex sunt et velit
                         cillum et non labore anim sit. Velit cillum et excepteur consectetur commodo ullamco anim do quis dolor.
                     </p>
+                    <div className="rotate-90 absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                        <div
+                            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                            style={{
+                                clipPath:
+                                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                            }}
+                        />
+                    </div>
                 </div>
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen">
-                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full">
+                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
                         What&apos;s New
                     </p>
                     <div className="flex flex-col md:flex-row gap-8">
-                        <div className="flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog1.webp" className="w-full object-contain" />
                             <p className="md:text-lg p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
                         </div>
 
-                        <div className="flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog2.webp" className="w-full object-contain" />
                             <p className="md:text-lg p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
                         </div>
 
-                        <div className="flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog3.webp" className="w-full object-contain" />
                             <p className="md:text-lg p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
                         </div>
+                    </div>
+                    <div
+                        className="rotate-30 absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                        aria-hidden="true"
+                    >
+                        <div
+                            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                            style={{
+                                clipPath:
+                                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                            }}
+                        />
                     </div>
                 </div>
             </motion.div>
@@ -323,15 +371,27 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="h-[30vh] md:h-[50vh] w-screen flex flex-col items-center p-4 md:p-12 lg:p-16"
+                className="h-[30vh] md:h-[50vh] w-screen flex flex-col items-center p-4 md:p-12 lg:p-16 relative isolate"
             >
                 <p className="bg-clip-text bg-gradient-to-l from-pink-500 to-blue-900 text-transparent text-9xl font-semibold tracking-wide leading-normal text-center md:text-left">
                     {`</>`}
                 </p>
                 <p className="font-mono tracking-widest text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl">Developer's Community</p>
                 <span className="font-mono tracking-widest text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl flex items-center">Coming Soon...</span>
+                <div
+                        className="rotate-60 absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                        aria-hidden="true"
+                    >
+                        <div
+                            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                            style={{
+                                clipPath:
+                                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                            }}
+                        />
+                    </div>
             </motion.div>
-            <div className="flex flex-col h-full w-full">
+            <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
                         <p className="text-xl 2xl:text-3xl font-semibold mb-2">edgeble</p>
