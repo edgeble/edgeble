@@ -303,10 +303,8 @@ export default function Home() {
                     <div className="flex justify-center">
                         <img src="./1.png" className="w-full object-cover rounded-lg" />
                     </div>
-                    <p className="text-md md:text-xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl text-center px-4">
-                        Reprehenderit consectetur consequat ullamco ea tempor Lorem minim. Fugiat aliquip aute commodo et nostrud enim nulla nostrud
-                        laborum non sint officia. Mollit aliqua proident Lorem tempor sint nostrud occaecat sit. Pariatur dolore sint ex sunt et velit
-                        cillum et non labore anim sit. Velit cillum et excepteur consectetur commodo ullamco anim do quis dolor.
+                    <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center px-4">
+			OpenAIA, EdgebIe AI's advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
                     </p>
                     <div className="rotate-90 absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                         <div
@@ -376,7 +374,7 @@ export default function Home() {
                 <p className="bg-clip-text bg-gradient-to-l from-pink-500 to-blue-900 text-transparent text-9xl font-semibold tracking-wide leading-normal text-center md:text-left">
                     {`</>`}
                 </p>
-                <p className="font-mono tracking-widest text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl">Developer's Community</p>
+		<p className="font-mono tracking-widest text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl">Developer&apos;s Community</p>
                 <span className="font-mono tracking-widest text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl flex items-center">Coming Soon...</span>
                 <div
                         className="rotate-60 absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
