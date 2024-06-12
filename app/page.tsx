@@ -34,6 +34,10 @@ export default function Home() {
                         </div>
                         <div className="text-center">
                             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Pre-trained GenAI Accelerator for Drone</h1>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                Accelerate your Edge AI deployments with breakthrough Pre-trained Neural Compute Modules powered by
+                                High Performance, Ultra Vision AI Accelerators
+                            </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link href="/contact" passHref legacyBehavior>
                                 <a

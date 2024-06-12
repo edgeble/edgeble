@@ -1,78 +1,64 @@
+// app/about/page.tsx
+"use client";
+
 import React from 'react';
+import Header from "../components/Header";
+import TeamMember from "../components/TeamMember";
+import Statistic from "../components/Statistic";
 
 const About = () => {
     return (
-        <div className="bg-blue-50 min-h-screen py-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 className="text-4xl font-bold text-center mb-2">About Edgeble AI</h1>
-                <p className="text-lg text-center mb-10">Welcome to Edgeble AI</p>
-                
-                <div className="text-center mb-10">
-                    <p className="text-lg">Edgeble AI is an Artificial Intelligence company with a focus on deploying Neural Acceleration principles at the Edge. Our unified architecture enables companies to develop Edge AI-enabled solutions once and deploy them everywhere.</p>
+        <div className="min-h-screen bg-white py-10 overflow-x-hidden">
+            <Header />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div className="absolute inset-0 z-0 transform-gpu overflow-hidden blur-3xl">
+                    <div
+                        className="absolute left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                        style={{
+                            clipPath:
+                                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                        }}
+                    />
                 </div>
-                
-                <div className="flex justify-center mb-16">
-                    <div className="text-center mx-4">
-                        <div className="text-5xl font-bold text-indigo-600 mb-2">15</div>
-                        <div className="text-lg">YEARS Experience</div>
-                        <div className="text-gray-700">Industrial Embedded</div>
+                <div className="relative z-10">
+                    <h1 className="text-4xl font-bold text-center mb-2 mt-10">About Edgeble AI</h1>
+                    <p className="text-lg text-center mb-10">Welcome to Edgeble AI</p>
+                    
+                    <div className="text-center mb-10">
+                        <p className="text-lg">Edgeble AI is an Artificial Intelligence company with a focus on deploying Neural Acceleration principles at the Edge. Our unified architecture enables companies to develop Edge AI-enabled solutions once and deploy them everywhere.</p>
                     </div>
-                    <div className="text-center mx-4">
-                        <div className="text-5xl font-bold text-indigo-600 mb-2">13</div>
-                        <div className="text-lg">YEARS Contributions</div>
-                        <div className="text-gray-700">Open Source</div>
+                    
+                    <div className="flex justify-center mb-16">
+                        <Statistic value={15} label="YEARS Experience" description="Industrial Embedded" />
+                        <Statistic value={13} label="YEARS Contributions" description="Open Source" />
+                        <Statistic value={20} label="International Conferences" description="Speak Exhibitor" />
                     </div>
-                    <div className="text-center mx-4">
-                        <div className="text-5xl font-bold text-indigo-600 mb-2">20</div>
-                        <div className="text-lg">International Conferences</div>
-                        <div className="text-gray-700">Speak Exhibitor</div>
-                    </div>
-                </div>
 
-                <div className="text-center mb-10">
-                    <p className="text-lg">We are a group of technology and business leaders whose products and services are already impacting many people and companies across the globe. Led by Jagan, who is passionate about incorporating open-source methods into AI technologies to move the world of technology forward.</p>
-                </div>
-                
-                <div className="flex justify-center mb-16">
-                    <div className="text-center mx-4">
-                        <img src="/path/to/jagan-teki.jpg" alt="Jagan Teki" className="w-32 h-32 rounded-full mx-auto mb-4"/>
-                        <div className="text-lg font-semibold">Jagan Teki</div>
-                        <div className="text-gray-700">Founder</div>
+                    <div className="text-center mb-10">
+                        <p className="text-lg">We are a group of technology and business leaders whose products and services are already impacting many people and companies across the globe. Led by Jagan, who is passionate about incorporating open-source methods into AI technologies to move the world of technology forward.</p>
                     </div>
-                    <div className="text-center mx-4">
-                        <img src="/path/to/michael-trimarchi.jpg" alt="Michael Nazzareno Trimarchi" className="w-32 h-32 rounded-full mx-auto mb-4"/>
-                        <div className="text-lg font-semibold">Michael Nazzareno Trimarchi</div>
-                        <div className="text-gray-700">Adviser</div>
+                    
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                        <TeamMember name="Jagan Teki" role="Founder" imagePath="/path/to/jagan-teki.jpg" />
+                        <TeamMember name="Michael Nazzareno Trimarchi" role="Adviser" imagePath="/path/to/michael-trimarchi.jpg" />
+                        <TeamMember name="Tom Cubie" role="Hardware" imagePath="/path/to/tom-cubie.jpg" />
+                        <TeamMember name="Alberto Bianchi" role="Hardware" imagePath="/path/to/alberto-bianchi.jpg" />
+                        <TeamMember name="Srinivas Patnaik" role="Adviser" imagePath="/path/to/srinivas-patnaik.jpg" />
                     </div>
-                    <div className="text-center mx-4">
-                        <img src="/path/to/tom-cubie.jpg" alt="Tom Cubie" className="w-32 h-32 rounded-full mx-auto mb-4"/>
-                        <div className="text-lg font-semibold">Tom Cubie</div>
-                        <div className="text-gray-700">Hardware</div>
-                    </div>
-                    <div className="text-center mx-4">
-                        <img src="/path/to/alberto-bianchi.jpg" alt="Alberto Bianchi" className="w-32 h-32 rounded-full mx-auto mb-4"/>
-                        <div className="text-lg font-semibold">Alberto Bianchi</div>
-                        <div className="text-gray-700">Hardware</div>
-                    </div>
-                    <div className="text-center mx-4">
-                        <img src="/path/to/srinivas-patnaik.jpg" alt="Srinivas Patnaik" className="w-32 h-32 rounded-full mx-auto mb-4"/>
-                        <div className="text-lg font-semibold">Srinivas Patnaik</div>
-                        <div className="text-gray-700">Adviser</div>
-                    </div>
-                </div>
 
-                <div className="mb-16">
-                    <img src="/path/to/exhibition.jpg" alt="Exhibition" className="w-full h-auto"/>
-                </div>
-
-                <div className="mb-16">
-                    <div className="bg-blue-100 p-8 rounded-lg shadow-md mb-8">
-                        <h2 className="text-xl font-semibold mb-4">Mission</h2>
-                        <p>Our mission is to make AI Acceleration in One Platform in order to deliver high-performance and fast responsive Edge AI.</p>
+                    <div className="mb-16">
+                        <img src="/path/to/exhibition.jpg" alt="Exhibition" className="w-full h-auto" />
                     </div>
-                    <div className="bg-blue-100 p-8 rounded-lg shadow-md">
-                        <h2 className="text-xl font-semibold mb-4">Vision</h2>
-                        <p>Our vision is to create real-time false-free Edge Computing technologies with the help of our holistic AI Acceleration Platform.</p>
+
+                    <div className="mb-16">
+                        <div className="bg-blue-100 p-8 rounded-lg shadow-md mb-8">
+                            <h2 className="text-xl font-semibold mb-4">Mission</h2>
+                            <p>Our mission is to make AI Acceleration in One Platform in order to deliver high-performance and fast responsive Edge AI.</p>
+                        </div>
+                        <div className="bg-blue-100 p-8 rounded-lg shadow-md">
+                            <h2 className="text-xl font-semibold mb-4">Vision</h2>
+                            <p>Our vision is to create real-time false-free Edge Computing technologies with the help of our holistic AI Acceleration Platform.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,4 +67,3 @@ const About = () => {
 };
 
 export default About;
-
