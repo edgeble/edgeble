@@ -38,6 +38,10 @@ export default function Home() {
                             <h1 className="text-4xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-gray-900">
                                 Pre-trained GenAI Accelerator for Drone
                             </h1>
+                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                                Accelerate your Edge AI deployments with breakthrough Pre-trained Neural Compute Modules powered by
+                                High Performance, Ultra Vision AI Accelerators
+                            </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link href="/contact" passHref legacyBehavior>
                                     <a className="bg-black px-3.5 lg:px-4 xl:px-6 2xl:px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-300 transform">
