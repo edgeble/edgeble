@@ -2,11 +2,13 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import MovingIcons from "./components/MovingIcons";
-import ScrollImages from "./components/ScrollImages";
-import { motion } from "framer-motion"
+// import ScrollImages from "./components/ScrollImages";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 export default function Home() {
     const [index, setindex] = useState(0);
+    const router = useRouter()
     return (
         <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden">
             <Header />
@@ -22,7 +24,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-1 flex items-center flex-col lg:flex-row justify-center">
-                    <div className="mx-auto max-w-2xl">
+                    <div className="mx-auto max-w-4xl 2xl:max-w-5xl">
                         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                                 Announcing our next round of funding.{" "}
@@ -33,19 +35,19 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="text-center">
-                            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Pre-trained GenAI Accelerator for Drone</h1>
+                            <h1 className="text-4xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-gray-900">
+                                Pre-trained GenAI Accelerator for Drone
+                            </h1>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link href="/contact" passHref legacyBehavior>
-                                <a
-                                    className="bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-300 transform"
-                                >
-                                    Get started
-                                </a>
+                                    <a className="bg-black px-3.5 lg:px-4 xl:px-6 2xl:px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-300 transform">
+                                        Get started
+                                    </a>
                                 </Link>
                                 <Link href="/contact" passHref legacyBehavior>
-                                <a className="text-sm font-semibold leading-6 text-gray-900">
-                                    Learn more <span aria-hidden="true">→</span>
-                                </a>
+                                    <a className="text-sm font-semibold leading-6 text-gray-900">
+                                        Learn more <span aria-hidden="true">→</span>
+                                    </a>
                                 </Link>
                             </div>
                         </div>
@@ -67,19 +69,17 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="min-h-screen flex flex-col">
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className="min-h-screen flex flex-col">
                 <MovingIcons />
-                <div className="flex-1 p-8 md:p-12 lg:p-16">
-                    <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12">Product Portfolio</p>
-                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+                <div className="flex-1 p-8 md:p-12 lg:p-16 2xl:p-48 3xl:56">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16">
+                        Product Portfolio
+                    </p>
+                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 p-4 lg:px-6 xl:px-8 2xl:px-10">
                         <div className="flex flex-col">
-                            <img src="./cardimage1.webp" className="w-full w-full object-cover cutImage" />
-                            <p className="text-lg md:text-xl lg:text-2xl font-semibold pt-8 pb-4">AI Accelerator</p>
-                            <p>
+                            <img src="./cardimage1.webp" className="flex-shrink-0 w-full object-cover cutImage" />
+                            <p className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-semibold pt-6 pb-2">AI Accelerator</p>
+                            <p className="flex-1 text-md lg:text-lg 2xl:text-xl text-gray-700 pb-2">
                                 Performance-driven standardized neural compute modules with built-in AI Accelerators that are ready to deploy in any
                                 AIoT sectors.
                             </p>
@@ -90,10 +90,11 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="flex flex-col">
-                            <img src="./cardimage2.webp" className="w-full w-full object-cover cutImage" />
-                            <p className="text-lg md:text-xl lg:text-2xl font-semibold pt-8 pb-4">Machine Vision Sensors</p>
-                            <p>
-                            Application-agnostic Camera sensor modules built with robust connectivity for delivering ultra vision Edge AI solutions.
+                            <img src="./cardimage2.webp" className="flex-shrink-0 w-full object-cover cutImage" />
+                            <p className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-semibold pt-6 pb-2">Machine Vision Sensors</p>
+                            <p className="flex-1 text-md lg:text-lg 2xl:text-xl text-gray-700 pb-2">
+                                Application-agnostic Camera sensor modules built with robust connectivity for delivering ultra vision Edge AI
+                                solutions.
                             </p>
                             <div className="flex">
                                 <button className="min-w-content pr-6 pl-4 py-2 mt-2 text-white bg-black hover:border-blue-700 hover:scale-110 hover:translate-x-2 hover:translate-y-2 hover:bg-gradient-to-r hover:from-black hover:to-blue-900 cursor-pointer button2 transition duration-300 transform">
@@ -102,10 +103,23 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="flex flex-col">
-                            <img src="./cardimage3.webp" className="w-full w-full object-cover cutImage" />
-                            <p className="text-lg md:text-xl lg:text-2xl font-semibold pt-8 pb-4">OpenAIA Ecosystem</p>
-                            <p>
-                            Open Source AI Accelerator model management platform which can train, deploy, and update the models powered by DevOps.
+                            <img src="./cardimage3.webp" className="flex-shrink-0 w-full object-cover cutImage" />
+                            <p className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-semibold pt-6 pb-2">OpenAIA Ecosystem</p>
+                            <p className="flex-1 text-md lg:text-lg 2xl:text-xl text-gray-700 pb-2">
+                                Open Source AI Accelerator model management platform which can train, deploy, and update the models powered by DevOps.
+                            </p>
+                            <div className="flex">
+                                <button className="min-w-content pr-6 pl-4 py-2 mt-2 text-white bg-black hover:border-blue-700 hover:scale-110 hover:translate-x-2 hover:translate-y-2 hover:bg-gradient-to-r hover:from-black hover:to-blue-900 cursor-pointer button2 transition duration-300 transform">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <img src="./cardimage1.webp" className="flex-shrink-0 w-full object-cover cutImage" />
+                            <p className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-semibold pt-6 pb-2">AI Accelerator</p>
+                            <p className="flex-1 text-md lg:text-lg 2xl:text-xl text-gray-700 pb-2">
+                                Performance-driven standardized neural compute modules with built-in AI Accelerators that are ready to deploy in any
+                                AIoT sectors.
                             </p>
                             <div className="flex">
                                 <button className="min-w-content pr-6 pl-4 py-2 mt-2 text-white bg-black hover:border-blue-700 hover:scale-110 hover:translate-x-2 hover:translate-y-2 hover:bg-gradient-to-r hover:from-black hover:to-blue-900 cursor-pointer button2 transition duration-300 transform">
@@ -116,75 +130,160 @@ export default function Home() {
                     </div>
                 </div>
             </motion.div>
-            <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="h-full md:h-screen w-screen">
-                <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
-                    <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center">Burgeoning Edge AI</p>
-                    <div className="w-full flex justify-center gap-1 lg:gap-4">
-                        <button
-                            className={`text-sm lg:text-lg px-4 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
-                                index == 0 ? "text-white bg-black" : "text-gray-800 bg-gray-100"
-                            }`}
-                            onClick={() => setindex(0)}
-                        >
-                            Discriminative
-                        </button>
-                        <button
-                            className={`text-sm lg:text-lg px-4 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
-                                index == 1 ? "text-white bg-black" : "text-gray-800 bg-gray-100"
-                            }`}
-                            onClick={() => setindex(1)}
-                        >
-                            Generative
-                        </button>
-                        <button
-                            className={`text-sm lg:text-lg px-4 lg:px-8 py-1 lg:py-2 transition duration-500 transform parallelogram ${
-                                index == 2 ? "text-white bg-black" : "text-gray-800 bg-gray-100"
-                            }`}
-                            onClick={() => setindex(2)}
-                        >
-                            Enhansive
-                        </button>
-                    </div>
-                    <div className="mt-8 w-full flex justify-center">
-                        {index == 0 && <video src="./adas1.mp4" className="w-[100vw] md:w-[60vw] object-contain" autoPlay muted />}
-                        {index == 1 && <video src="./adas2.mp4" className="w-[100vw] md:w-[60vw] object-contain" autoPlay muted />}
-                        {index == 2 && <video src="./adas3.mp4" className="w-[100vw] md:w-[60vw] object-contain" autoPlay muted />}
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="h-full md:h-screen w-screen overflow-x-hidden"
+            >
+                <div className="w-full flex flex-col justify-center items-center p-8 md:p-12 lg:p-16 2xl:p-48">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
+                        Burgeoning Edge AI
+                    </p>
+                    <div className="w-full flex flex-col lg:flex-row items-center justify-center">
+                        <div className="order-2 lg:order-1 w-full flex justify-center">
+                            {index == 0 && <video src="./adas1.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
+                            {index == 1 && <video src="./adas2.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
+                            {index == 2 && <video src="./adas3.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
+                            {index == 3 && <video src="./adas1.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
+                            {index == 4 && <video src="./adas2.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
+                        </div>
+                        <div className="order-1 lg:order-2 w-full flex flex-row lg:flex-wrap items-center lg:justify-center mb-6 md:mb-0 overflow-x-auto scrollbar-hide">
+                            <div
+                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
+                                onClick={() => {
+                                    setindex(0);
+                                }}
+                            >
+                                <div
+                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                        index == 0 ? "border-black" : "border-gray-200 hover:border-gray-400"
+                                    }`}
+                                >
+                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
+                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
+                                        lorem ipsumSunt commodo elit esse sunt minim.
+                                    </p>
+                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${0}`)}>
+                                        Learn more <span aria-hidden="true">→</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
+                                onClick={() => {
+                                    setindex(1);
+                                }}
+                            >
+                                <div
+                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                        index == 1 ? "border-black" : "border-gray-200 hover:border-gray-400"
+                                    }`}
+                                >
+                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
+                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
+                                        lorem ipsumSunt commodo elit esse sunt minim.
+                                    </p>
+                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${1}`)}>
+                                        Learn more <span aria-hidden="true">→</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
+                                onClick={() => {
+                                    setindex(2);
+                                }}
+                            >
+                                <div
+                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                        index == 2 ? "border-black" : "border-gray-200 hover:border-gray-400"
+                                    }`}
+                                >
+                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
+                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
+                                        lorem ipsumSunt commodo elit esse sunt minim.
+                                    </p>
+                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${2}`)}>
+                                        Learn more <span aria-hidden="true">→</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
+                                onClick={() => {
+                                    setindex(3);
+                                }}
+                            >
+                                <div
+                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                        index == 3 ? "border-black" : "border-gray-200 hover:border-gray-400"
+                                    }`}
+                                >
+                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
+                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
+                                        lorem ipsumSunt commodo elit esse sunt minim.
+                                    </p>
+                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${3}`)}>
+                                        Learn more <span aria-hidden="true">→</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
+                                onClick={() => {
+                                    setindex(4);
+                                }}
+                            >
+                                <div
+                                    className={`flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
+                                        index == 4 ? "border-black" : "border-gray-200 hover:border-gray-400"
+                                    }`}
+                                >
+                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
+                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
+                                        lorem ipsumSunt commodo elit esse sunt minim.
+                                    </p>
+                                    <div className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center" onClick={()=>router.push(`/product/${4}`)}>
+                                        Learn more <span aria-hidden="true">→</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </motion.div>
-            <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="h-full md:h-screen flex flex-col justify-center">
+            {/* <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="h-full md:h-screen flex flex-col justify-center"
+            >
                 <div className="p-8 md:p-12 lg:p-16">
                     <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center">Solutions</p>
                     <ScrollImages />
                 </div>
-            </motion.div>
-            <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-             className="h-full md:h-screen w-screen">
-                <div className="p-8 md:p-12 lg:p-16 w-full">
-                    <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center">Ecosystem</p>
+            </motion.div> */}
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen">
+                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
+                        Ecosystem
+                    </p>
                     <div className="flex justify-center">
                         <img src="./1.png" className="w-full object-cover rounded-lg" />
                     </div>
+                    <p className="text-md md:text-xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl text-center px-4">
+                        Reprehenderit consectetur consequat ullamco ea tempor Lorem minim. Fugiat aliquip aute commodo et nostrud enim nulla nostrud
+                        laborum non sint officia. Mollit aliqua proident Lorem tempor sint nostrud occaecat sit. Pariatur dolore sint ex sunt et velit
+                        cillum et non labore anim sit. Velit cillum et excepteur consectetur commodo ullamco anim do quis dolor.
+                    </p>
                 </div>
             </motion.div>
-            <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="h-full md:h-screen w-screen">
-                <div className="p-8 md:p-12 lg:p-16 w-full">
-                    <p className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-12 text-center">What&apos;s New</p>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen">
+                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
+                        What&apos;s New
+                    </p>
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog1.webp" className="w-full object-contain" />
@@ -203,42 +302,59 @@ export default function Home() {
                     </div>
                 </div>
             </motion.div>
-            <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }} 
-            className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between p-4 md:p-12 lg:p-16">
-                <p className="text-white text-2xl md:text-4xl lg:text-5xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between p-4 md:p-12 lg:p-16"
+            >
+                <p className="text-white text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
                     Are You Ready To Embrace The Future of Edge-AI
                 </p>
-                <button className="px-6 py-2 md:text-lg bg-white transition duration-300 transform hover:scale-110 font-semibold">Enquire Now</button>
+                <button className="px-6 2xl:px-10 py-2 2xl:py-3 md:text-lg xl:text-xl 2xl:text-2xl bg-white transition duration-300 transform hover:scale-110 font-semibold">
+                    Enquire Now
+                </button>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="h-[30vh] md:h-[50vh] w-screen flex flex-col items-center p-4 md:p-12 lg:p-16"
+            >
+                <p className="bg-clip-text bg-gradient-to-l from-pink-500 to-blue-900 text-transparent text-9xl font-semibold tracking-wide leading-normal text-center md:text-left">
+                    {`</>`}
+                </p>
+                <p className="font-mono tracking-widest text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl">Developer's Community</p>
+                <span className="font-mono tracking-widest text-xl lg:text-2xl 2xl:text-3xl 3xl:text-4xl flex items-center">Coming Soon...</span>
             </motion.div>
             <div className="flex flex-col h-full w-full">
                 <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl font-semibold mb-2">edgeble</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">edgeble</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">
                             Are You Ready To Embrace The Future of Edge-AI
                         </a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm mt-2">Terms & Conditions</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">Privacy Policy</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg mt-2">
+                            Terms & Conditions
+                        </a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Privacy Policy</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl font-semibold mb-2">Products</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">AI Accelerators</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">Machine Vision</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">OpenAI</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">Technology</a>
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Products</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">AI Accelerators</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Machine Vision</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">OpenAI</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Technology</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl font-semibold mb-2">Company</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">About Us</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">Solutions</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">Platform</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm">Blogs</a>
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Company</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">About Us</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Solutions</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Platform</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Blogs</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl font-semibold mb-2">Contact</p>
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Contact</p>
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 flex-shrink-0">
                                 <path
@@ -247,7 +363,7 @@ export default function Home() {
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            <p className="text-grey-700 text-sm">
+                            <p className="text-grey-700 text-sm 2xl:text-lg">
                                 T-Hub, Raidurgam Panmaktha, Hyderabad Knowledge City, Hyderabad, Telangana 500081, India.
                             </p>
                         </div>
@@ -257,7 +373,7 @@ export default function Home() {
                                 <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
                             </svg>
 
-                            <p className="text-grey-700 text-sm">info@edgeble.ai</p>
+                            <p className="text-grey-700 text-sm 2xl:text-lg">info@edgeble.ai</p>
                         </div>
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 flex-shrink-0">
@@ -268,17 +384,21 @@ export default function Home() {
                                 />
                             </svg>
 
-                            <p className="text-grey-700 text-sm">+91-91000-90959</p>
+                            <p className="text-grey-700 text-sm 2xl:text-lg">+91-91000-90959</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2 w-72">
-                        <p className="text-xl font-semibold mb-4">Stay Updated</p>
-                        <div className="flex h-12 w-full">
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-4">Stay Updated</p>
+                        <div className="flex w-full flex-col gap-4">
                             <input
-                                className="h-full px-2 border border-2 border-black focus:border-blue-900 outline-none w-full"
+                                className="px-2 py-1 border border-2 border-black focus:border-blue-900 outline-none w-full"
+                                placeholder="Enter Name"
+                            ></input>
+                            <input
+                                className="px-2 py-1 border border-2 border-black focus:border-blue-900 outline-none w-full"
                                 placeholder="Enter email address"
                             ></input>
-                            <button className="h-full bg-blue-900 text-white px-4">Subscribe</button>
+                            <button className="py-2 bg-blue-900 text-white px-4">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -316,7 +436,7 @@ export default function Home() {
                     </a>
                 </div>
                 <div className="h-12 w-full flex justify-center items-center">
-                    <small>© 2024 Edgeble AI Technologies Private Limited.</small>
+                    <p className="text-[12px] lg:text-sm 2xl:text-md 3xl:text-lg">© 2024 Edgeble AI Technologies Private Limited.</p>
                 </div>
             </div>
         </main>

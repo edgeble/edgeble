@@ -11,5 +11,4 @@
     background-color: white;
     display: flex;
     gap: 40px;
-    animation: scroll-right 40s linear infinite;
 }
