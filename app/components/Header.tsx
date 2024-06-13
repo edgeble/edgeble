@@ -24,10 +24,10 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '#', icon: ChartPieIcon },
+  { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '#', icon: SquaresPlusIcon},
   { name: 'Machine vision Sensors', description: 'Application-agnostic Camera sensor modules', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'OpenAIA Ecosystem', description: 'Open source AI Accelerator model management platform', href: '#', icon: FingerPrintIcon },
-  { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '#', icon: SquaresPlusIcon },
+  { name: 'OpenAIA Ecosystem', description: 'Open source AI Accelerator model management platform', href: '#', icon: SquaresPlusIcon},
+  { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '#', icon: CursorArrowRaysIcon},
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
