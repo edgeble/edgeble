@@ -8,11 +8,11 @@ const MainComponent = () => {
 
   const videoSources = ['./adas1.mp4', './adas2.mp4', './adas3.mp4', './adas4.mp4', './adas5.mp4'];
   const cardData = [
-    { title: 'Discriminative', description: 'lorem', index: 0 },
-    { title: 'Generative', description: 'lorem', index: 1 },
-    { title: 'Enhansive', description: 'lorem', index: 2 },
-    { title: 'Object Detection', description: 'lorem', index: 3 },
-    { title: 'Edgeble Solution', description: 'lorem', index: 4 },
+    { title: 'Discriminative', description: 'Edgeable AI', index: 0 },
+    { title: 'Generative', description: 'Edgeable AI', index: 1 },
+    { title: 'Enhansive', description: 'Edgeable AI', index: 2 },
+    { title: 'Object Detection', description: 'Edgeable AI', index: 3 },
+    { title: 'Edgeble Solution', description: 'Edgeable AI', index: 4 },
   ];
 
 
