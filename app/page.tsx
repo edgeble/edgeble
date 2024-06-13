@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import Header from "./components/Header";
-import MovingIcons from "./components/MovingIcons";
+// import MovingIcons from "./components/MovingIcons"; // This component is removed for now can be used later on
 // import ScrollImages from "./components/ScrollImages";
+import MainComponent from './components/MainComponent';
+import ProductPortfolio from './components/ProductPortfolio';
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -24,23 +26,14 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-1 flex items-center flex-col lg:flex-row justify-center">
-                    <div className="mx-auto max-w-4xl 2xl:max-w-5xl">
-                        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                Announcing our next round of funding.{" "}
-                                <a href="#" className="font-semibold text-indigo-600">
-                                    <span className="absolute inset-0" aria-hidden="true" />
-                                    Read more <span aria-hidden="true">&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div className="mx-auto max-w-3xl 2xl:max-w-4xl">
                         <div className="text-center">
                             <h1 className="text-4xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-gray-900">
-                                Pre-trained GenAI Accelerator for Drone
+                                World&apos;s Fastest Pre-trained Edge AI Accelerators
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Accelerate your Edge AI deployments with breakthrough Pre-trained Neural Compute Modules powered by High Performance,
-                                Ultra Vision AI Accelerators
+                                Edgeble AI Accelerator Modules enable deep learning inferences at the edge,
+                                reducing latency and enhancing response times
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link href="/contact" passHref legacyBehavior>
@@ -73,8 +66,9 @@ export default function Home() {
                     />
                 </div>
             </div>
+            <MainComponent />
+            <ProductPortfolio />
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className="min-h-screen flex flex-col">
-                <MovingIcons />
                 <div className="flex-1 p-8 md:p-12 lg:p-16 2xl:p-48 3xl:56">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16">
                         Product Portfolio
@@ -134,156 +128,6 @@ export default function Home() {
                     </div>
                 </div>
             </motion.div>
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="h-full md:h-screen w-screen overflow-x-hidden"
-            >
-                <div className="w-full flex flex-col justify-center items-center p-8 md:p-12 lg:p-16 2xl:p-48 relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
-                        Burgeoning Edge AI
-                    </p>
-                    <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-                        <div className="order-2 lg:order-1 w-full flex justify-center">
-                            {index == 0 && <video src="./adas1.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
-                            {index == 1 && <video src="./adas2.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
-                            {index == 2 && <video src="./adas3.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
-                            {index == 3 && <video src="./adas1.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
-                            {index == 4 && <video src="./adas2.mp4" className="w-[100vw] md:w-[30vw] object-contain" autoPlay muted loop />}
-                        </div>
-                        <div className="order-1 lg:order-2 w-full flex flex-row lg:flex-wrap items-center lg:justify-center mb-6 md:mb-0 overflow-x-auto scrollbar-hide">
-                            <div
-                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
-                                onClick={() => {
-                                    setindex(0);
-                                }}
-                            >
-                                <div
-                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
-                                        index == 0 ? "border-black" : "border-gray-200 hover:border-gray-400"
-                                    }`}
-                                >
-                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
-                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
-                                        lorem ipsumSunt commodo elit esse sunt minim.
-                                    </p>
-                                    <div
-                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
-                                        onClick={() => router.push(`/product/${0}`)}
-                                    >
-                                        Learn more <span aria-hidden="true">→</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
-                                onClick={() => {
-                                    setindex(1);
-                                }}
-                            >
-                                <div
-                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
-                                        index == 1 ? "border-black" : "border-gray-200 hover:border-gray-400"
-                                    }`}
-                                >
-                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
-                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
-                                        lorem ipsumSunt commodo elit esse sunt minim.
-                                    </p>
-                                    <div
-                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
-                                        onClick={() => router.push(`/product/${1}`)}
-                                    >
-                                        Learn more <span aria-hidden="true">→</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
-                                onClick={() => {
-                                    setindex(2);
-                                }}
-                            >
-                                <div
-                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
-                                        index == 2 ? "border-black" : "border-gray-200 hover:border-gray-400"
-                                    }`}
-                                >
-                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
-                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
-                                        lorem ipsumSunt commodo elit esse sunt minim.
-                                    </p>
-                                    <div
-                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
-                                        onClick={() => router.push(`/product/${2}`)}
-                                    >
-                                        Learn more <span aria-hidden="true">→</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
-                                onClick={() => {
-                                    setindex(3);
-                                }}
-                            >
-                                <div
-                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
-                                        index == 3 ? "border-black" : "border-gray-200 hover:border-gray-400"
-                                    }`}
-                                >
-                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
-                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
-                                        lorem ipsumSunt commodo elit esse sunt minim.
-                                    </p>
-                                    <div
-                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
-                                        onClick={() => router.push(`/product/${3}`)}
-                                    >
-                                        Learn more <span aria-hidden="true">→</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="w-[90vw] md:w-1/3 2xl:w-1/3 p-1 md:p-2 lg:p-4 2xl:p-6 cursor-pointer"
-                                onClick={() => {
-                                    setindex(4);
-                                }}
-                            >
-                                <div
-                                    className={`z-0 bg-white flex flex-col border border-2 p-4 lg:p-6 transition transform duration-300 ease-in-out ${
-                                        index == 4 ? "border-black" : "border-gray-200 hover:border-gray-400"
-                                    }`}
-                                >
-                                    <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">Discriminative</p>
-                                    <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">
-                                        lorem ipsumSunt commodo elit esse sunt minim.
-                                    </p>
-                                    <div
-                                        className="w-24 lg:w-36 text-[10px] md:text-[12px] lg:text-[14px] xl:text-sm 2xl:text-md leading-6 text-white cursor-pointer bg-gradient-to-r from-black/50 via-black to-black parallelogram2 px-2 lg:px-4 2xl:px-6 py-px lg:py-1 mt-2 text-center"
-                                        onClick={() => router.push(`/product/${4}`)}
-                                    >
-                                        Learn more <span aria-hidden="true">→</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        className="rotate-30 absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-                        aria-hidden="true"
-                    >
-                        <div
-                            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-                            style={{
-                                clipPath:
-                                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                            }}
-                        />
-                    </div>
-                </div>
-            </motion.div>
             {/* <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -304,7 +148,7 @@ export default function Home() {
                         <img src="./1.png" className="w-full object-cover rounded-lg" />
                     </div>
                     <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center px-4">
-			OpenAIA, EdgebIe AI&apos;s advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
+			OpenAIA, Edgeble AI&apos;s advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
                     </p>
                     <div className="rotate-90 absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                         <div
