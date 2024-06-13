@@ -5,6 +5,7 @@ import Header from "./components/Header";
 // import ScrollImages from "./components/ScrollImages";
 import MainComponent from './components/MainComponent';
 import ProductPortfolio from './components/ProductPortfolio';
+import ComingSoonSection from './components/ComingSoonSection';
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -141,7 +142,8 @@ export default function Home() {
                     Enquire Now
                 </button>
             </motion.div>
-            <motion.div
+            <ComingSoonSection />
+            {/* <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -164,7 +166,7 @@ export default function Home() {
                             }}
                         />
                     </div>
-            </motion.div>
+            </motion.div> */}
             <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
