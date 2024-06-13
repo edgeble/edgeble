@@ -1,7 +1,15 @@
 import React from 'react';
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
 
-const Card = ({ index, activeIndex, setActiveIndex, title, description }) => {
+interface CardProps {
+  index: number;
+  activeIndex: number;
+  setActiveIndex: (index: number) => void;
+  title: string;
+  description: string;
+}
+
+const Card: React.FC<CardProps> = ({ index, activeIndex, setActiveIndex, title, description }) => {
   const router = useRouter();
   return (
     <div className="w-[90vw] md:w-1/3 p-1 md:p-2 lg:p-4 cursor-pointer" onClick={() => setActiveIndex(index)}>
