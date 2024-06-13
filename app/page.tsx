@@ -66,10 +66,9 @@ export default function Home() {
                     />
                 </div>
             </div>
+            <div className="overflow-y-auto"><MainComponent /></div>
             
-            <MainComponent />
-            
-            <ProductPortfolio />
+            <div className="overflow-y-auto"><ProductPortfolio /></div>
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen">
                 <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full relative isolate">

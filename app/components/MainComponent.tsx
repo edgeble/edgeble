@@ -16,10 +16,10 @@ const MainComponent = () => {
   ];
 
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen overflow-x-hidden">
-      <div className="w-full flex flex-col justify-center items-center p-8 md:p-12 lg:p-16 2xl:p-48 relative isolate">
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-screen w-screen overflow-hidden">
+      <div className="w-full h-full flex flex-col justify-center items-center p-8 md:p-12 lg:p-16 2xl:p-48 relative isolate">
         <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">Burgeoning Edge AI</p>
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center">
+        <div className="w-full h-full flex flex-col lg:flex-row items-center justify-center overflow-hidden">
           <div className="order-2 lg:order-1 w-full flex justify-center">
             {videoSources.map((src, index) => (
               <VideoPlayer key={index} src={src} activeIndex={activeIndex} index={index} />
