@@ -15,7 +15,6 @@ const MainComponent = () => {
     { title: 'Edgeble Solution', description: 'Edgeable AI', index: 4 },
   ];
 
-
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="min-h-screen w-full overflow-hidden">
       <div className="w-full h-full flex flex-col justify-center items-center p-4 md:p-8 lg:p-12 2xl:p-16 relative isolate">
@@ -26,7 +25,7 @@ const MainComponent = () => {
               <VideoPlayer key={index} src={src} activeIndex={activeIndex} index={index} />
             ))}
           </div>
-          <div className="order-1 lg:order-2 w-full flex flex-wrap items-center justify-center gap-4">
+          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {cardData.map((card) => (
               <Card key={card.index} index={card.index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} title={card.title} description={card.description} />
             ))}
