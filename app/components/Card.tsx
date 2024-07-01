@@ -12,7 +12,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ index, activeIndex, setActiveIndex, title, description }) => {
   const router = useRouter();
   return (
-    <div className="flex flex-col items-center p-2 cursor-pointer" onClick={() => setActiveIndex(index)}>
+    <div className="hidden md:flex flex-col items-center p-2 cursor-pointer" onClick={() => setActiveIndex(index)}>
       <div className={`w-full h-full bg-white flex flex-col border border-2 p-4 md:p-6 transition-transform duration-300 ease-in-out ${activeIndex === index ? 'border-black' : 'border-gray-200 hover:border-gray-400'}`}>
         <p className="text-md md:text-lg xl:text-xl 2xl:text-3xl font-semibold mb-1">{title}</p>
         <p className="text-[12px] md:text-sm xl:text-md 2xl:text-lg text-gray-600">{description}</p>
