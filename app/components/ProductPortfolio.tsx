@@ -18,11 +18,6 @@ const products = [
     title: 'OpenAIA Ecosystem',
     description: 'Open Source AI Accelerator model management platform which can train, deploy, and update the models powered by DevOps.',
   },
-  {
-    image: './cardimage1.webp',
-    title: 'AI Accelerator',
-    description: 'Performance-driven standardized neural compute modules with built-in AI Accelerators that are ready to deploy in any AIoT sectors.',
-  },
 ];
 
 const ProductPortfolio: React.FC = () => (

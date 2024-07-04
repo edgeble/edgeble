@@ -150,28 +150,28 @@ export default function Home() {
             <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">edgeble</p>
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">AI Accelerators</p>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">
-                            Are You Ready To Embrace The Future of Edge-AI
+                            Edgeble-NCM6A
                         </a>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg mt-2">
-                            Terms & Conditions
+                            Edgeble-NCM6B
                         </a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Privacy Policy</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Edgeble-NCM6C</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Products</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">AI Accelerators</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Machine Vision</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">OpenAI</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Technology</a>
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">OpenAIA Ecosystem</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Upstream Linux</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Edgeble Model Zoo</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Edgeble Model Update</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Company</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">About Us</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Solutions</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Platform</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Blogs</a>
+                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Solutions</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Object Detection</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Plat Protection</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Welding Inspection</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">ADAS/AD</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Generative Edge AI</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
                         <p className="text-xl 2xl:text-3xl font-semibold mb-2">Contact</p>
@@ -209,6 +209,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col gap-2 w-72">
                         <p className="text-xl 2xl:text-3xl font-semibold mb-4">Stay Updated</p>
+                        <a className="text-grey-700 cursor-pointer text-sm 2xl:text-lg">Sign up to our newsletter to stay up to date</a>
                         <div className="flex w-full flex-col gap-4">
                             <input
                                 className="px-2 py-1 border border-2 border-black focus:border-blue-900 outline-none w-full"

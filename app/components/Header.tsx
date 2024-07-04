@@ -25,9 +25,8 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 const products = [
   { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '#', icon: SquaresPlusIcon},
-  { name: 'Machine vision Sensors', description: 'Application-agnostic Camera sensor modules', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Machine vision Sensors', description: 'Application-agnostic Camera sensor modules', href: '#', icon: SquaresPlusIcon },
   { name: 'OpenAIA Ecosystem', description: 'Open source AI Accelerator model management platform', href: '#', icon: SquaresPlusIcon},
-  { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '#', icon: CursorArrowRaysIcon},
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -114,15 +113,12 @@ export default function Header() {
             Platform
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Ecosystem
-          </a>
-          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+            Blogs
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+            Sign up <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
