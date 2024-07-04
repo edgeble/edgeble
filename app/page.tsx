@@ -5,7 +5,7 @@ import Header from "./components/Header";
 // import ScrollImages from "./components/ScrollImages";
 import MainComponent from './components/MainComponent';
 import ProductPortfolio from './components/ProductPortfolio';
-import ComingSoonSection from './components/ComingSoonSection';
+// import ComingSoonSection from './components/ComingSoonSection';
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -138,12 +138,14 @@ export default function Home() {
                 <p className="text-white text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
                     Are You Ready To Embrace The Future of Edge-AI
                 </p>
-                <button className="px-6 2xl:px-10 py-2 2xl:py-3 md:text-lg xl:text-xl 2xl:text-2xl bg-white transition duration-300 transform hover:scale-110 font-semibold">
-                    Enquire Now
-                </button>
+                <a href="/contact">
+                    <button className="px-6 2xl:px-10 py-2 2xl:py-3 md:text-lg xl:text-xl 2xl:text-2xl bg-white transition duration-300 transform hover:scale-110 font-semibold">
+                        Enquire Now
+                    </button>
+                </a>
             </motion.div>
 
-            <ComingSoonSection />
+            {/* <ComingSoonSection /> */}
 
             <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
