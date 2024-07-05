@@ -16,9 +16,9 @@ const MainComponent = () => {
   ];
 
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="min-h-screen w-full overflow-hidden">
-      <div className="w-full h-full flex flex-col justify-center items-center p-4 md:p-8 lg:p-12 2xl:p-16 relative isolate">
-        <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">Burgeoning Edge AI</p>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="w-full overflow-hidden">
+    <div className="w-full h-auto flex flex-col justify-center items-center p-4 md:p-8 lg:p-12 2xl:p-16 relative isolate">
+    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">Burgeoning Edge AI</p>
         
         {/* Horizontal sliding bar for mobile view */}
         <div className="w-full flex lg:hidden overflow-x-auto whitespace-nowrap py-2">

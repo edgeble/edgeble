@@ -71,8 +71,8 @@ export default function Home() {
             
             <div className="overflow-y-auto"><ProductPortfolio /></div>
 
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen">
-                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full relative isolate">
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen">
+                <div className="p-8 lg:p-16 2xl:p-24 w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
                         Ecosystem
                     </p>
@@ -80,7 +80,7 @@ export default function Home() {
                         <img src="./1.png" className="w-full object-cover rounded-lg" />
                     </div>
                     <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center px-4">
-			OpenAIA, Edgeble AI&apos;s advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
+                        OpenAIA, Edgeble AI&apos;s advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
                     </p>
                     <div className="rotate-90 absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                         <div
@@ -94,8 +94,8 @@ export default function Home() {
                 </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-full md:h-screen w-screen">
-                <div className="p-8 md:p-12 lg:p-16 2xl:p-48 w-full relative isolate">
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen">
+                <div className="p-8 md:p-12 lg:p-16 2xl:p-20 w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
                         What&apos;s New
                     </p>
