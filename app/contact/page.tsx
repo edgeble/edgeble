@@ -4,6 +4,7 @@
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Header from "../components/Header";
+import Location from '../components/Location';
 
 type FormValues = {
     name: string;
@@ -150,6 +151,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
+            <Location/>
         </div>
     );
 };
