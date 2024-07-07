@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'info@edgeble.ai', // Replace with your recipient email address
+      to: 'paritosh21w@gmail.com', // Replace with your recipient email address
       subject: `Contact Form Submission: ${subject}`,
       text: `
         Name: ${name}
