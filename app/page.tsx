@@ -72,6 +72,25 @@ export default function Home() {
             
             <div className="overflow-y-auto"><ProductPortfolio /></div>
 
+            <motion.div 
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="h-auto w-screen bg-white"
+>
+    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
+        Solutions
+    </p>
+    <div className="w-screen flex items-center justify-center p-8">
+        <img src="./s1.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
+        <img src="./s2.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
+        <img src="./s3.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
+        <img src="./s4.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
+        <img src="./s5.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
+    </div>
+</motion.div>
+
+
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen">
                 <div className="p-8 lg:p-16 2xl:p-24 w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
