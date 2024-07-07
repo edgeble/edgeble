@@ -14,11 +14,30 @@ type FormValues = {
 };
 
 const ContactUs = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<FormValues>();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<FormValues>();
 
-    const onSubmit: SubmitHandler<FormValues> = data => {
-        console.log(data);
-        // Handle form submission, e.g., send data to an API
+    const onSubmit: SubmitHandler<FormValues> = async (data) => {
+        try {
+            const response = await fetch('/contact/subscribecontact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                alert('Message sent successfully');
+                reset();
+            } else {
+                alert(`Error sending message: ${result.error}`);
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('An error occurred while sending the message. Please try again later.');
+        }
     };
 
     return (
