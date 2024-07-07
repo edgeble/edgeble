@@ -112,7 +112,7 @@ export default function Header() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Platform
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#whats-new" className="text-sm font-semibold leading-6 text-gray-900">
             Blogs
           </a>
         </PopoverGroup>

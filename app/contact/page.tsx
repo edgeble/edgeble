@@ -62,7 +62,7 @@ const ContactUs = () => {
                             <h2 className="text-xl font-semibold mb-4">Edgeble AI Technologies Private Limited</h2>
                             <p>T-Hub, 7th floor, DST - CoE AI/ML(MATH), 1/C,83/1, Raidurgam Panmaktha, Hyderabad Knowledge City, Serilingamapally, Hyderabad, Telangana 500081, India</p>
                             <p className="mt-4"><strong>Phone</strong><br />+91 91000 90959</p>
-                            <p className="mt-4"><strong>Email</strong><br /><a href="mailto:info@edgeble.ai" className="text-blue-600">info@edgeble.ai</a></p>
+                            <p className="mt-4"><strong>Email</strong><br /><a href="mailto:info@edgeble.ai" className="text-blue-900">info@edgeble.ai</a></p>
                         </div>
                         <div className="sm:col-span-1">
                             <h2 className="text-xl font-semibold mb-4">We love to hear from you</h2>
@@ -140,7 +140,7 @@ const ContactUs = () => {
                                 <div className="sm:col-span-2">
                                     <button
                                         type="submit"
-                                        className="w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700"
+                                        className="w-full py-2 px-4 bg-blue-900 text-white font-semibold rounded-md shadow-md hover:bg-blue-700"
                                     >
                                         Submit
                                     </button>
