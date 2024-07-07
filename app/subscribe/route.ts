@@ -16,7 +16,7 @@ export async function POST(request: Request) {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'paritosh21w@gmail.com',
+    to: 'info@edgeble.ai',
     subject: 'New Subscription',
     text: `Name: ${name}\nEmail: ${email}`,
   };
