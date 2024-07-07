@@ -18,9 +18,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, title, description, sp
           <li key={index} className="text-gray-600">{spec}</li>
         ))}
       </ul>
-      <button className="px-4 py-2 bg-black text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out">
-        Read More
-      </button>
+      {title === "AI Accelerators" ? (
+        <a href="/aiaccelerator">
+          <button className="px-4 py-2 bg-black text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out">
+            Read More
+          </button>
+        </a>
+      ) : (
+        <button className="px-4 py-2 bg-black text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out">
+          Read More
+        </button>
+      )}
     </div>
   </div>
 );

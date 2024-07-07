@@ -24,7 +24,7 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '#', icon: SquaresPlusIcon},
+  { name: 'AI Accelerator', description: 'Performance-driven standardized neural compute modules', href: '/aiaccelerator', icon: SquaresPlusIcon},
   { name: 'Machine vision Sensors', description: 'Application-agnostic Camera sensor modules', href: '#', icon: SquaresPlusIcon },
   { name: 'OpenAIA Ecosystem', description: 'Open source AI Accelerator model management platform', href: '#', icon: SquaresPlusIcon},
 ]
@@ -118,7 +118,7 @@ export default function Header() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
-            Sign up <span aria-hidden="true">&rarr;</span>
+            Subscribe <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
