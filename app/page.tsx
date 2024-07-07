@@ -5,6 +5,7 @@ import Header from "./components/Header";
 // import ScrollImages from "./components/ScrollImages";
 import MainComponent from './components/MainComponent';
 import ProductPortfolio from './components/ProductPortfolio';
+import SubscribeSection from "./components/SubscribeSection";
 // import ComingSoonSection from './components/ComingSoonSection';
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -210,21 +211,7 @@ export default function Home() {
                             <p className="text-grey-700 text-sm 2xl:text-lg">+91-91000-90959</p>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-2 w-72">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-4">Stay Updated</p>
-                        <a className="text-grey-700 cursor-pointer text-sm 2xl:text-lg">Sign up to our newsletter to stay up to date</a>
-                        <div className="flex w-full flex-col gap-4">
-                            <input
-                                className="px-2 py-1 border border-2 border-black focus:border-blue-900 outline-none w-full"
-                                placeholder="Enter Name"
-                            ></input>
-                            <input
-                                className="px-2 py-1 border border-2 border-black focus:border-blue-900 outline-none w-full"
-                                placeholder="Enter email address"
-                            ></input>
-                            <button className="py-2 bg-blue-900 text-white px-4">Subscribe</button>
-                        </div>
-                    </div>
+                    <SubscribeSection/>
                 </div>
                 <div className="w-full h-px bg-gray-600 my-10 mx-8 md:mx-12 lg:mx-16"></div>
                 <div className="w-full flex justify-center items-center gap-4 px-8 md:px-12 lg:px-16 mb-10">
