@@ -91,7 +91,7 @@ export default function Home() {
 </motion.div>
 
 
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen">
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="ecosystem">
                 <div className="p-8 md:p-10 lg:p-12 2xl:p-14 w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
                         Ecosystem

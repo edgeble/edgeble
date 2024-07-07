@@ -112,8 +112,11 @@ export default function Header() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Platform
           </a>
-          <a href="#whats-new" className="text-sm font-semibold leading-6 text-gray-900">
-            Blogs
+          <a href="#ecosystem" className="text-sm font-semibold leading-6 text-gray-900">
+            Ecosystem
+          </a>
+          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+            Company
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
