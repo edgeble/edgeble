@@ -17,6 +17,15 @@ const ContactUs = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormValues>();
 
     const onSubmit: SubmitHandler<FormValues> = async (data) => {
+        
+        console.log({
+            host: process.env.EMAIL_HOST,
+            port: process.env.EMAIL_PORT,
+            secure: process.env.EMAIL_SECURE,
+            user: process.env.EMAIL_USER,
+            // Don't log passwords in real application environments
+        });
+
         try {
             const response = await fetch('/contact/subscribecontact', {
                 method: 'POST',
