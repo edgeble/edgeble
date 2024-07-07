@@ -82,9 +82,12 @@ export default function Home() {
                     <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center px-4">
                         OpenAIA, Edgeble AI&apos;s advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
                     </p>
-                    <div className="rotate-90 absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                    <div
+                        className="rotate-30 absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                        aria-hidden="true"
+                    >
                         <div
-                            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
                             style={{
                                 clipPath:
                                     "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -154,7 +157,7 @@ export default function Home() {
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">
                             Edgeble-NCM6A
                         </a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg mt-2">
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">
                             Edgeble-NCM6B
                         </a>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Edgeble-NCM6C</a>
@@ -168,7 +171,7 @@ export default function Home() {
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
                         <p className="text-xl 2xl:text-3xl font-semibold mb-2">Solutions</p>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Object Detection</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Plat Protection</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Plant Protection</a>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Welding Inspection</a>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">ADAS/AD</a>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Generative Edge AI</a>
