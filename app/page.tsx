@@ -148,8 +148,19 @@ export default function Home() {
                     </button>
                 </a>
             </motion.div>
+            <div className="w-full flex justify-center pt-4">
+  <div className="section w-full flex flex-col items-center text-center md:text-left px-8 md:px-12 lg:px-16">
+    <div className="flex items-center justify-center md:justify-start mb-4">
+      <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-blue-900">Edgeble</span>
+    </div>
+    <p className="text-md md:text-lg lg:text-xl text-gray-700">
+      Edgeble AI Accelerators enable to compute deep learning inferences at the edge by reducing the latency and pacing-up the response time.
+      These modules use Edgeble AI’s Open Source AI Accelerator model management platform which can train, deploy and update the models powered by DevOps.
+    </p>
+  </div>
+</div>
 
-            {/* <ComingSoonSection /> */}
+
 
             <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
