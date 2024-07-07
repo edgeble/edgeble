@@ -37,7 +37,7 @@ const products = [
 
 const ProductPortfolio: React.FC = () => (
   <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex flex-col items-center justify-center">
-    <div className="w-full max-w-7xl p-8">
+    <div className="w-full max-w-7xl p-8 md:p-10 lg:p-12 2xl:p-14">
       <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">Product Portfolio</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product, index) => (
