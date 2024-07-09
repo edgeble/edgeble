@@ -76,17 +76,17 @@ export default function Home() {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="h-auto w-screen bg-white p-8 md:p-10 lg:p-12 2xl:p-14"
+    className="h-auto w-screen bg-white pt-8 pb-8 md:pt-10 md:pb-10 lg:pt-12 lg:pb-12 2xl:pt-14 2xl:pb-14"
 >
     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
         Solutions
     </p>
-    <div className="w-screen flex items-center justify-center">
-        <img src="./s1.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
-        <img src="./s2.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
-        <img src="./s3.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
-        <img src="./s4.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
-        <img src="./s5.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 5)", height: "auto" }} />
+    <div className="w-screen flex items-center justify-center gap-4">
+        <img src="./s1.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
+        <img src="./s2.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
+        <img src="./s3.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
+        <img src="./s4.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
+        <img src="./s5.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
     </div>
 </motion.div>
 
