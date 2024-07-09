@@ -57,7 +57,7 @@ const ContactUs = () => {
                 <h1 className="text-4xl font-bold mb-2 mt-10">Contact</h1>
                 <p className="text-lg mb-10">GET IN TOUCH</p>
 
-                <div className="bg-white shadow-md rounded-lg p-8 max-w-4xl w-full">
+                <div className="bg-white shadow-md rounded-lg p-8 max-w-4xl w-full lg:max-w-6xl">
                     <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div className="sm:col-span-1">
                             <h2 className="text-xl font-semibold mb-4">Edgeble AI Technologies Private Limited</h2>

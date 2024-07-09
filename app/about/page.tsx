@@ -39,15 +39,11 @@ const About = () => {
                     </div>
                     
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-                        <TeamMember name="Jagan Teki" role="Founder" imagePath="/path/to/jagan-teki.jpg" />
-                        <TeamMember name="Michael Nazzareno Trimarchi" role="Adviser" imagePath="/path/to/michael-trimarchi.jpg" />
-                        <TeamMember name="Tom Cubie" role="Hardware" imagePath="/path/to/tom-cubie.jpg" />
-                        <TeamMember name="Alberto Bianchi" role="Hardware" imagePath="/path/to/alberto-bianchi.jpg" />
-                        <TeamMember name="Srinivas Patnaik" role="Adviser" imagePath="/path/to/srinivas-patnaik.jpg" />
-                    </div>
-
-                    <div className="mb-16">
-                        <img src="/path/to/exhibition.jpg" alt="Exhibition" className="w-full h-auto" />
+                        <TeamMember name="Jagan Teki" role="Founder" imagePath="./a1.png" />
+                        <TeamMember name="Michael Nazzareno Trimarchi" role="Adviser" imagePath="./a2.png" />
+                        <TeamMember name="Tom Cubie" role="Hardware" imagePath="./a3.png" />
+                        <TeamMember name="Alberto Bianchi" role="Hardware" imagePath="./a4.png" />
+                        <TeamMember name="Srinivas Patnaik" role="Adviser" imagePath="./a5.png" />
                     </div>
 
                     <div className="mb-16">
