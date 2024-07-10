@@ -170,7 +170,7 @@ export default function Home() {
                     </button>
                 </a>
             </motion.div>
-            <div className="w-full p-6 md:p-10 lg:p-14 2xl:p-18 relative isolate">
+            <div className="w-full px-6 md:px-10 lg:px-14 2xl:px-18 pt-4 relative isolate">
   <div className="section w-full">
     <div className="mb-4">
       <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-blue-900 block">Edgeble</span>
@@ -181,9 +181,6 @@ export default function Home() {
     </p>
   </div>
 </div>
-
-
-
 
             <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
