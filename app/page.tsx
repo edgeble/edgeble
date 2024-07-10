@@ -76,7 +76,7 @@ export default function Home() {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="px-8 md:px-12 lg:px-16 2xl:px-20 w-full relative isolate"
+    className="p-8 md:p-12 lg:p-16 2xl:p-20 w-full relative isolate"
 >
     <div className="flex flex-col w-full">
         <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
@@ -102,7 +102,7 @@ export default function Home() {
                     <div className="flex justify-center">
                         <img src="./1.png" className="w-full object-cover rounded-lg" />
                     </div>
-                    <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-center px-4">
+                    <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-start">
                         OpenAIA, Edgeble AI&apos;s advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
                     </p>
                     <div
@@ -170,10 +170,10 @@ export default function Home() {
                     </button>
                 </a>
             </motion.div>
-            <div className="w-full flex justify-center pt-4">
-  <div className="section w-full flex flex-col items-center text-center md:text-left px-8 md:px-12 lg:px-16">
-    <div className="flex items-center justify-center md:justify-start mb-4">
-      <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-blue-900">Edgeble</span>
+            <div className="w-full p-6 md:p-10 lg:p-14 2xl:p-18 relative isolate">
+  <div className="section w-full">
+    <div className="mb-4">
+      <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-blue-900 block">Edgeble</span>
     </div>
     <p className="text-md md:text-lg lg:text-xl text-gray-700">
       Edgeble AI Accelerators enable to compute deep learning inferences at the edge by reducing the latency and pacing-up the response time.
@@ -181,6 +181,7 @@ export default function Home() {
     </p>
   </div>
 </div>
+
 
 
 
