@@ -82,7 +82,7 @@ export default function Home() {
         <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
             Solutions
         </p>
-        <div className="flex w-full overflow-hidden gap-4">
+        <div className="flex w-full overflow-hidden gap-0 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4 3xl:gap-5">
             <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
             <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
             <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
