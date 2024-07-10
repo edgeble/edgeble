@@ -14,7 +14,7 @@ export default function Home() {
     const [index, setindex] = useState(0);
     const router = useRouter();
     return (
-        <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden">
+        <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden max-w-full relative">
             <Header />
 
             <div className="min-h-screen relative isolate px-6 pt-14 lg:px-8 flex flex-col">
@@ -72,28 +72,31 @@ export default function Home() {
             
             <div className="overflow-y-auto"><ProductPortfolio /></div>
 
-            <motion.div 
+<motion.div 
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="h-auto w-screen bg-white pt-8 pb-8 md:pt-10 md:pb-10 lg:pt-12 lg:pb-12 2xl:pt-14 2xl:pb-14"
+    className="px-8 md:px-12 lg:px-16 2xl:px-20 w-full relative isolate"
 >
-    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
-        Solutions
-    </p>
-    <div className="w-screen flex items-center justify-center gap-4">
-        <img src="./s1.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
-        <img src="./s2.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
-        <img src="./s3.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
-        <img src="./s4.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
-        <img src="./s5.png" className="transition-transform duration-300 hover:scale-110 cursor-pointer object-contain" style={{ width: "calc(100% / 6.8)", height: "auto" }} />
+    <div className="flex flex-col w-full">
+        <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
+            Solutions
+        </p>
+        <div className="flex w-full overflow-hidden gap-4">
+            <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
+            <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
+            <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
+            <img src="./s4.png" alt="Solution 4" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
+            <img src="./s5.png" alt="Solution 5" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
+        </div>
     </div>
 </motion.div>
 
 
+
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="ecosystem">
-                <div className="p-8 md:p-10 lg:p-12 2xl:p-14 w-full relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
+                <div className="p-8 md:p-12 lg:p-16 2xl:p-20 w-full relative isolate">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
                         Ecosystem
                     </p>
                     <div className="flex justify-center">
@@ -119,7 +122,7 @@ export default function Home() {
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="whats-new">
                 <div className="p-8 md:p-12 lg:p-16 2xl:p-20 w-full relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-center">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
                         What&apos;s New
                     </p>
                     <div className="flex flex-col md:flex-row gap-8">

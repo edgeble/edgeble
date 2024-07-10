@@ -9,13 +9,13 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ image, title, description, specs }) => (
   <div className="flex flex-col overflow-hidden">
-    <img src={image} className="w-full h-56 object-cover" />
-    <div className="p-4">
-      <h3 className="text-lg md:text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-sm md:text-md">{description}</p>
+    <img src={image} className="w-full h-auto object-cover" />
+    <div className="pt-4">
+      <h3 className="text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold mb-2">{title}</h3>
+      <p className="text-sm md:text-md lg:text-md xl:text-lg 2xl:text-xl">{description}</p>
       <ul className="list-disc pl-5 text-sm mb-4">
         {specs.map((spec, index) => (
-          <li key={index} className="text-gray-600">{spec}</li>
+          <li key={index} className="text-sm md:text-md lg:text-md xl:text-lg 2xl:text-xl text-gray-600">{spec}</li>
         ))}
       </ul>
       {title === "AI Accelerators" ? (

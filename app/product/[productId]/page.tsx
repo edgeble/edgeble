@@ -13,7 +13,7 @@ export default function Page({ params }: { params: { productId: string } }) {
                 {params.productId == "3" && <video src="../../adas1.mp4" className="w-full object-contain" autoPlay muted loop />}
                 {params.productId == "4" && <video src="../../adas2.mp4" className="w-full object-contain" autoPlay muted loop />}
             </div>
-            <p className="text-center mt-10 text-2xl px-48 2xl:px-96 mb-24">Aute laboris quis excepteur nostrud velit enim duis velit. Mollit consequat ut veniam velit aliquip ad fugiat ipsum laboris exercitation. Mollit est laboris eiusmod tempor qui voluptate veniam veniam reprehenderit labore eiusmod qui ad.</p>
+            <p className="text-center mt-10 text-2xl px-48 2xl:px-96 mb-24"></p>
         </main>
     );
 }
