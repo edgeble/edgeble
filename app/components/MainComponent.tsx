@@ -17,7 +17,7 @@ const MainComponent = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="w-full overflow-hidden">
-    <div className="w-full h-auto flex flex-col justify-center items-start p-8 md:p-12 lg:p-16 2xl:p-20 relative isolate">
+    <div className="w-full h-auto flex flex-col justify-center items-start py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 relative isolate">
     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">Burgeoning Edge AI</p>
         
         {/* Horizontal sliding bar for mobile view */}
@@ -34,12 +34,12 @@ const MainComponent = () => {
         </div>
         
         <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-        <div className="order-2 lg:order-1 w-full">
+        <div className="order-2 lg:order-1 w-full w-2/5 3xl:w-1/2">
             {videoSources.map((src, index) => (
               <VideoPlayer key={index} src={src} activeIndex={activeIndex} index={index} />
             ))}
         </div>
-          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/5 3xl:w-1/2">
             {cardData.map((card) => (
               <Card key={card.index} index={card.index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} title={card.title} description={card.description} />
             ))}

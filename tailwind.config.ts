@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1920px', // Custom breakpoint for larger screens
+        '4xl': '2560px', // Custom breakpoint for even larger screens
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -20,4 +24,6 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
+

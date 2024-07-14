@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <header className="bg-white fixed inset-x-0 top-0 z-50">
-      <nav className="mx-auto flex items-center justify-between px-8 pt-4 4xl:pt-6 pb-4 4xl:pb-6 md:px-18 lg:px-28 2xl:px-38 3xl:px-48" aria-label="Global">
+      <nav className="mx-auto flex items-center justify-between pt-4 4xl:pt-6 pb-4 4xl:pb-6 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="text-xl 3xl:text-3xl 4xl:text-5xl text-black">edgeble</span>

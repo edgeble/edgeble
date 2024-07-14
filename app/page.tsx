@@ -14,7 +14,7 @@ export default function Home() {
     const [index, setindex] = useState(0);
     const router = useRouter();
     return (
-        <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden max-w-full relative">
+        <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden max-w-full relative box-border">
             <Header />
 
             <div className="min-h-screen relative isolate px-6 pt-14 lg:px-8 flex flex-col">
@@ -28,27 +28,28 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-1 flex items-center flex-col lg:flex-row justify-center">
-                    <div className="mx-auto max-w-3xl 2xl:max-w-4xl">
+                    <div className="mx-auto px-2 md:px-18 lg:px-20 2xl:px-30 3xl:px-40" style={{ width: '70%' }}>
                         <div className="text-center">
-                            <h1 className="text-4xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-gray-900">
+                            <h1 className="text-4xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-gray-900 pb-4 lg:pb-6 3xl:pb-10">
                                 World&apos;s Fastest Pre-trained Edge AI Accelerators
                             </h1>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">
+                            <p className="mt-6 text-lg lg:text-2xl 2xl:text-3xl 3xl:text-4xl leading-8 text-gray-600">
                                 Edgeble AI Accelerator Modules enable deep learning inferences at the edge,
                                 reducing latency and enhancing response times
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link href="/contact" passHref legacyBehavior>
-                                    <a className="bg-black px-3.5 lg:px-4 xl:px-6 2xl:px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-300 transform">
+                                    <a className="bg-black px-3.5 lg:px-4 xl:px-6 2xl:px-8 3xl:px-10 4xl:px12 py-2.5 3xl:py-3 4xl:py-3.5 text-sm 3xl:text-lg 4xl:text-2xl font-semibold text-white shadow-sm hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition duration-300 transform">
                                         Get started
                                     </a>
                                 </Link>
                                 <Link href="/contact" passHref legacyBehavior>
-                                    <a className="text-sm font-semibold leading-6 text-gray-900">
+                                    <a className="text-sm 3xl:text-lg 4xl:text-2xl font-semibold leading-6 3xl:leading-8 text-gray-900">
                                         Learn more <span aria-hidden="true">→</span>
                                     </a>
                                 </Link>
                             </div>
+
                         </div>
                     </div>
                     <div className="w-full lg:w-1/3 mt-20 md:mt-0">
@@ -69,40 +70,40 @@ export default function Home() {
                 </div>
             </div>
             <div className="overflow-y-auto"><MainComponent /></div>
-            
+
             <div className="overflow-y-auto"><ProductPortfolio /></div>
 
-<motion.div 
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 0.5 }}
-    className="p-8 md:p-12 lg:p-16 2xl:p-20 w-full relative isolate"
->
-    <div className="flex flex-col w-full">
-        <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
-            Solutions
-        </p>
-        <div className="flex w-full overflow-hidden gap-0 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4 3xl:gap-5">
-            <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
-            <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
-            <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
-            <img src="./s4.png" alt="Solution 4" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
-            <img src="./s5.png" alt="Solution 5" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover" />
-        </div>
-    </div>
-</motion.div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 box-border"
+            >
+                <div className="flex flex-col w-full box-border">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
+                        Solutions
+                    </p>
+                    <div className="flex w-full overflow-hidden gap-0 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4 3xl:gap-5 4xl:gap-6 box-border">
+                        <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
+                        <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
+                        <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
+                        <img src="./s4.png" alt="Solution 4" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
+                        <img src="./s5.png" alt="Solution 5" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
+                    </div>
+                </div>
+            </motion.div>
 
 
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="ecosystem">
-                <div className="p-8 md:p-12 lg:p-16 2xl:p-20 w-full relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
+                <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 w-full relative isolate">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         Ecosystem
                     </p>
                     <div className="flex justify-center">
                         <img src="./1.png" className="w-full object-cover rounded-lg" />
                     </div>
-                    <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl text-start">
+                    <p className="text-sm md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl text-start">
                         OpenAIA, Edgeble AI&apos;s advanced AI Accelerator Platform, seamlessly empowers Edge AI-enabled devices to develop, train, deploy, and update AI models, integrating secure and scalable model management with DevOps methodologies to drive transformative innovation.
                     </p>
                     <div
@@ -121,8 +122,8 @@ export default function Home() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="whats-new">
-                <div className="p-8 md:p-12 lg:p-16 2xl:p-20 w-full relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">
+                <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 w-full relative isolate">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         What&apos;s New
                     </p>
                     <div className="flex flex-col md:flex-row gap-8">
@@ -159,7 +160,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between p-4 md:p-12 lg:p-16"
+                className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48"
             >
                 <p className="text-white text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
                     Are You Ready To Embrace The Future of Edge-AI
@@ -170,20 +171,20 @@ export default function Home() {
                     </button>
                 </a>
             </motion.div>
-            <div className="w-full px-6 md:px-10 lg:px-14 2xl:px-18 pt-4 relative isolate">
-  <div className="section w-full">
-    <div className="mb-4">
-      <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-blue-900 block">Edgeble</span>
-    </div>
-    <p className="text-md md:text-lg lg:text-xl text-gray-700">
-      Edgeble AI Accelerators enable to compute deep learning inferences at the edge by reducing the latency and pacing-up the response time.
-      These modules use Edgeble AI’s Open Source AI Accelerator model management platform which can train, deploy and update the models powered by DevOps.
-    </p>
-  </div>
-</div>
+            <div className="w-full px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 pt-6 relative isolate">
+                <div className="section w-full">
+                    <div className="mb-4">
+                        <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-blue-900 block">Edgeble</span>
+                    </div>
+                    <p className="text-md md:text-lg lg:text-xl text-gray-700">
+                        Edgeble AI Accelerators enable to compute deep learning inferences at the edge by reducing the latency and pacing-up the response time.
+                        These modules use Edgeble AI’s Open Source AI Accelerator model management platform which can train, deploy and update the models powered by DevOps.
+                    </p>
+                </div>
+            </div>
 
             <div className="flex flex-col h-full w-full z-0 bg-white">
-                <div className="flex flex-wrap gap-8 p-8 md:p-12 lg:p-16">
+                <div className="flex flex-wrap gap-8 py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48">
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
                         <p className="text-xl 2xl:text-3xl font-semibold mb-2">AI Accelerators</p>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">
@@ -242,7 +243,7 @@ export default function Home() {
                             <p className="text-grey-700 text-sm 2xl:text-lg">+91-91000-90959</p>
                         </div>
                     </div>
-                    <SubscribeSection/>
+                    <SubscribeSection />
                 </div>
                 <div className="w-full h-px bg-gray-600 my-10 mx-8 md:mx-12 lg:mx-16"></div>
                 <div className="w-full flex justify-center items-center gap-4 px-8 md:px-12 lg:px-16 mb-10">
