@@ -8,11 +8,11 @@ const MainComponent = () => {
 
   const videoSources = ['./adas1.mp4', './adas2.mp4', './adas3.mp4', './adas4.mp4', './adas5.mp4'];
   const cardData = [
-    { title: 'Discriminative', description: 'Edgeable AI', index: 0 },
-    { title: 'Generative', description: 'Edgeable AI', index: 1 },
-    { title: 'Enhansive', description: 'Edgeable AI', index: 2 },
-    { title: 'Object Detection', description: 'Edgeable AI', index: 3 },
-    { title: 'Edgeble Solution', description: 'Edgeable AI', index: 4 },
+    { title: 'Discriminative', description: 'Edge AI', index: 0 },
+    { title: 'Generative', description: 'Edge AI', index: 1 },
+    { title: 'Enhansive', description: 'Edge AI', index: 2 },
+    { title: 'Object Detection', description: 'Edge AI', index: 3 },
+    { title: 'Edgeble Solution', description: 'Edge AI', index: 4 },
   ];
 
   return (
@@ -34,12 +34,12 @@ const MainComponent = () => {
         </div>
         
         <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-        <div className="order-2 lg:order-1 w-full w-2/5 3xl:w-1/2">
+        <div className="order-2 lg:order-1 w-full w-2/5 3xl:w-1/2 4xl:w-3/5">
             {videoSources.map((src, index) => (
               <VideoPlayer key={index} src={src} activeIndex={activeIndex} index={index} />
             ))}
         </div>
-          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/5 3xl:w-1/2">
+          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/5 3xl:w-1/2 4xl:w-2/5">
             {cardData.map((card) => (
               <Card key={card.index} index={card.index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} title={card.title} description={card.description} />
             ))}

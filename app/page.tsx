@@ -279,7 +279,7 @@ export default function Home() {
                     </a>
                 </div>
                 <div className="h-12 w-full flex justify-center items-center">
-                    <p className="text-[12px] lg:text-sm 2xl:text-md 3xl:text-lg">© 2024 Edgeble AI Technologies Private Limited.</p>
+                    <p className="text-[12px] lg:text-sm 2xl:text-md 3xl:text-lg 4xl:text-2xl">© 2024 Edgeble AI Technologies Private Limited.</p>
                 </div>
             </div>
         </main>
