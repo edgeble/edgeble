@@ -42,10 +42,10 @@ export default function Header() {
 
   return (
     <header className="bg-white fixed inset-x-0 top-0 z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex items-center justify-between px-8 pt-4 4xl:pt-6 pb-4 4xl:pb-6 md:px-18 lg:px-28 2xl:px-38 3xl:px-48" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="text-2xl text-black">edgeble</span>
+            <span className="text-xl 3xl:text-3xl 4xl:text-5xl text-black">edgeble</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -60,7 +60,7 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-lg 4xl:text-4xl leading-6 text-gray-900">
               Product
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </PopoverButton>
@@ -109,18 +109,18 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
             Platform
           </a>
-          <a href="#ecosystem" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#ecosystem" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
             Ecosystem
           </a>
-          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/about" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
             Company
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/contact" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
             Subscribe <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
