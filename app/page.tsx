@@ -80,7 +80,7 @@ export default function Home() {
                 className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 box-border"
             >
                 <div className="flex flex-col w-full box-border">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         Solutions
                     </p>
                     <div className="flex w-full overflow-hidden gap-0 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4 3xl:gap-5 4xl:gap-6 box-border">
@@ -97,7 +97,7 @@ export default function Home() {
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="ecosystem">
                 <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 w-full relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         Ecosystem
                     </p>
                     <div className="flex justify-center">
@@ -123,23 +123,23 @@ export default function Home() {
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="whats-new">
                 <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 w-full relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         What&apos;s New
                     </p>
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog1.webp" className="w-full object-contain" />
-                            <p className="md:text-lg p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
+                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
                         </div>
 
                         <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog2.webp" className="w-full object-contain" />
-                            <p className="md:text-lg p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
+                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
                         </div>
 
                         <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog3.webp" className="w-full object-contain" />
-                            <p className="md:text-lg p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
+                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
                         </div>
                     </div>
                     <div
@@ -162,21 +162,21 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48"
             >
-                <p className="text-white text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
+                <p className="text-white text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
                     Are You Ready To Embrace The Future of Edge-AI
                 </p>
                 <a href="/contact">
-                    <button className="px-6 2xl:px-10 py-2 2xl:py-3 md:text-lg xl:text-xl 2xl:text-2xl bg-white transition duration-300 transform hover:scale-110 font-semibold">
+                    <button className="px-6 2xl:px-10 py-2 2xl:py-3 md:text-lg xl:text-xl 2xl:text-2xl 4xl:text-4xl bg-white transition duration-300 transform hover:scale-110 font-semibold">
                         Enquire Now
                     </button>
                 </a>
             </motion.div>
             <div className="w-full px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 pt-6 relative isolate">
                 <div className="section w-full">
-                    <div className="mb-4">
-                        <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-blue-900 block">Edgeble</span>
+                    <div className="mb-4 pb-2 lg:pb-4 2xl:pb-6 4xl:pb-8">
+                        <span className="font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl text-blue-900 block">Edgeble</span>
                     </div>
-                    <p className="text-md md:text-lg lg:text-xl text-gray-700">
+                    <p className="text-md md:text-lg 3xl:text-xl 4xl:text-3xl text-gray-700">
                         Edgeble AI Accelerators enable to compute deep learning inferences at the edge by reducing the latency and pacing-up the response time.
                         These modules use Edgeble AI’s Open Source AI Accelerator model management platform which can train, deploy and update the models powered by DevOps.
                     </p>
@@ -186,31 +186,31 @@ export default function Home() {
             <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48">
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">AI Accelerators</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">
+                        <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">AI Accelerators</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">
                             Edgeble-NCM6A
                         </a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">
                             Edgeble-NCM6B
                         </a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Edgeble-NCM6C</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Edgeble-NCM6C</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">OpenAIA Ecosystem</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Upstream Linux</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Edgeble Model Zoo</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Edgeble Model Update</a>
+                        <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">OpenAIA Ecosystem</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Upstream Linux</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Edgeble Model Zoo</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Edgeble Model Update</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Solutions</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Object Detection</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Plant Protection</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Welding Inspection</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">ADAS/AD</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer text-sm 2xl:text-lg">Generative Edge AI</a>
+                        <p className="tmd:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">Solutions</p>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Object Detection</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Plant Protection</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Welding Inspection</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">ADAS/AD</a>
+                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Generative Edge AI</a>
                     </div>
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="text-xl 2xl:text-3xl font-semibold mb-2">Contact</p>
+                        <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">Contact</p>
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 flex-shrink-0">
                                 <path
@@ -219,7 +219,7 @@ export default function Home() {
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            <p className="text-grey-700 text-sm 2xl:text-lg">
+                            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
                                 T-Hub, Raidurgam Panmaktha, Hyderabad Knowledge City, Hyderabad, Telangana 500081, India.
                             </p>
                         </div>
@@ -229,7 +229,7 @@ export default function Home() {
                                 <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
                             </svg>
 
-                            <p className="text-grey-700 text-sm 2xl:text-lg">info@edgeble.ai</p>
+                            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">info@edgeble.ai</p>
                         </div>
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 flex-shrink-0">
@@ -240,7 +240,7 @@ export default function Home() {
                                 />
                             </svg>
 
-                            <p className="text-grey-700 text-sm 2xl:text-lg">+91-91000-90959</p>
+                            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">+91-91000-90959</p>
                         </div>
                     </div>
                     <SubscribeSection />

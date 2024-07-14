@@ -31,22 +31,22 @@ const SubscribeSection = () => {
 
   return (
     <div className="flex flex-col gap-2 w-72">
-      <p className="text-xl 2xl:text-3xl font-semibold mb-4">Stay Updated</p>
-      <a className="text-grey-700 cursor-pointer text-sm 2xl:text-lg">Sign up to our newsletter to stay up to date</a>
+      <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-4">Stay Updated</p>
+      <a className="text-grey-700 cursor-pointer text-sm md:text-md 3xl:text-lg 4xl:text-2xl">Sign up to our newsletter to stay up to date</a>
       <form onSubmit={handleSubmit} className="flex w-full flex-col gap-4">
         <input
-          className="px-2 py-1 border border-2 border-black focus:border-blue-900 outline-none w-full"
+          className="px-2 py-2 border border-2 border-black focus:border-blue-900 outline-none w-full"
           placeholder="Enter Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
-          className="px-2 py-1 border border-2 border-black focus:border-blue-900 outline-none w-full"
+          className="px-2 py-2 border border-2 border-black focus:border-blue-900 outline-none w-full"
           placeholder="Enter email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <button type="submit" className="py-2 bg-blue-900 text-white px-4">Subscribe</button>
+        <button type="submit" className="py-3 bg-blue-900 text-white px-4">Subscribe</button>
       </form>
       {message && <p>{message}</p>}
     </div>
