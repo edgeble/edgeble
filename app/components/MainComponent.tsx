@@ -34,12 +34,12 @@ const MainComponent = () => {
         </div>
         
         <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-        <div className="order-2 lg:order-1 w-full w-2/5 3xl:w-1/2 4xl:w-3/5">
+        <div className="order-2 lg:order-1 w-full w-2/5 3xl:w-1/2 4xl:w-7/12">
             {videoSources.map((src, index) => (
               <VideoPlayer key={index} src={src} activeIndex={activeIndex} index={index} />
             ))}
         </div>
-          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/5 3xl:w-1/2 4xl:w-2/5">
+          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/5 3xl:w-1/2 4xl:w-5/12">
             {cardData.map((card) => (
               <Card key={card.index} index={card.index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} title={card.title} description={card.description} />
             ))}
