@@ -10,7 +10,7 @@ const ProductPage = () => {
         <div className="min-h-screen bg-white flex flex-col">
             <Header />
             <div className="flex-1 flex flex-col items-center py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-8 pt-16">AI Accelerator Module</h1>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold text-blue-900 mb-8 pt-16">AI Accelerator Module</h1>
                 <div className="space-x-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                     <div className="bg-white shadow-md rounded-lg p-4">
                         <img src="./ai.png" alt="NCM6A" className="w-full mb-4"/>
