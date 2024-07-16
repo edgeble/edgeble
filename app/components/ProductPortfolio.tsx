@@ -37,7 +37,7 @@ const products = [
 
 const ProductPortfolio: React.FC = () => (
   <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="w-full h-auto">
-    <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 w-full relative isolate">
+    <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px] w-full relative isolate">
       <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">Product Portfolio</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product, index) => (

@@ -17,7 +17,7 @@ export default function Home() {
         <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden max-w-full relative box-border">
             <Header />
 
-            <div className="min-h-screen relative isolate px-6 pt-14 lg:px-8 flex flex-col">
+            <div className="min-h-screen relative isolate px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px] pt-14 lg:px-8 flex flex-col">
                 <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                     <div
                         className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -28,7 +28,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex-1 flex items-center flex-col lg:flex-row justify-center">
-                    <div className="mx-auto px-2 md:px-18 lg:px-20 2xl:px-30 3xl:px-40" style={{ width: '70%' }}>
+                    <div className="mx-auto" style={{ width: '70%' }}>
                         <div className="text-center">
                             <h1 className="text-4xl lg:text-7xl 2xl:text-8xl font-bold tracking-tight text-gray-900 pb-4 lg:pb-6 3xl:pb-10">
                                 World&apos;s Fastest Pre-trained Edge AI Accelerators
@@ -77,7 +77,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 box-border"
+                className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px] box-border"
             >
                 <div className="flex flex-col w-full box-border">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
@@ -96,7 +96,7 @@ export default function Home() {
 
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="ecosystem">
-                <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 w-full relative isolate">
+                <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px] w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         Ecosystem
                     </p>
@@ -122,7 +122,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="whats-new">
-                <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 w-full relative isolate">
+                <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px] w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         What&apos;s New
                     </p>
@@ -160,7 +160,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48"
+                className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px]"
             >
                 <p className="text-white text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
                     Are You Ready To Embrace The Future of Edge-AI
@@ -171,7 +171,7 @@ export default function Home() {
                     </button>
                 </a>
             </motion.div>
-            <div className="w-full px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48 pt-6 relative isolate">
+            <div className="w-full px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px] pt-6 relative isolate">
                 <div className="section w-full">
                     <div className="mb-4 pb-2 lg:pb-4 2xl:pb-6 4xl:pb-8">
                         <span className="font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl text-blue-900 block">Edgeble</span>
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col h-full w-full z-0 bg-white">
-                <div className="flex flex-wrap gap-8 py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-48">
+                <div className="flex flex-wrap gap-8 py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[400px] 5xl:px-[600px]">
                     <div className="flex-1 flex flex-col gap-2 min-w-48">
                         <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">AI Accelerators</p>
                         <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">
