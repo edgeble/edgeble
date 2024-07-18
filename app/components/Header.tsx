@@ -45,7 +45,11 @@ export default function Header() {
       <nav className="mx-auto flex items-center justify-between pt-4 4xl:pt-6 pb-4 4xl:pb-6 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[450px] 5xl:px-[700px]" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="text-xl 3xl:text-3xl 4xl:text-5xl text-black">edgeble</span>
+          <img
+    src="./icon.png"
+    alt="edgeble"
+    className="h-8 w-auto 3xl:h-10 4xl:h-16"
+  />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -173,13 +177,13 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Blog
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  Pre-Order
                 </a>
                 <a
                   href="#"
@@ -193,7 +197,7 @@ export default function Header() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Subscribe
                 </a>
               </div>
             </div>
