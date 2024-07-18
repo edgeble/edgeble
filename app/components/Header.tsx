@@ -110,10 +110,10 @@ export default function Header() {
           </Popover>
 
           <a href="#" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
-            Platform
+            Blog
           </a>
           <a href="#ecosystem" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
-            Ecosystem
+            Pre-Order
           </a>
           <a href="/about" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
             Company

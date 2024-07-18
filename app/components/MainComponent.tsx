@@ -17,6 +17,7 @@ const MainComponent = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="w-full overflow-hidden">
+    
     <div className="w-full h-auto flex flex-col justify-center items-start py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[450px] 5xl:px-[700px] relative isolate">
     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">Burgeoning Edge AI</p>
         

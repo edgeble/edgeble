@@ -3,7 +3,7 @@ import React from 'react';
 
 const Location = () => {
     return (
-        <div className="contact-section my-12">
+        <div className="w-full h-auto justify-center items-center py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[450px] 5xl:px-[700px] relative isolate">
             <h2 className="text-2xl font-bold text-center mb-4">How to Find Us</h2>
             <p className="text-center mb-4">Visit us at our office for a personal consultation.</p>
             <div className="map-container">

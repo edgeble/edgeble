@@ -53,11 +53,11 @@ const ContactUs = () => {
     return (
         <div className="min-h-screen bg-blue-50 flex flex-col">
             <Header />
-            <div className="flex-1 flex flex-col items-center justify-center py-10">
-                <h1 className="text-4xl font-bold mb-2 mt-10">Contact</h1>
+            <div className="w-full h-auto flex flex-col justify-center items-center py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[450px] 5xl:px-[700px] relative isolate">
+            <h1 className="text-4xl font-bold mb-2 mt-10 text-center">Contact</h1>
                 <p className="text-lg mb-10">GET IN TOUCH</p>
 
-                <div className="bg-white shadow-md rounded-lg p-8 max-w-4xl w-full lg:max-w-6xl">
+                <div className="bg-white shadow-md rounded-lg p-8 w-full">
                     <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div className="sm:col-span-1">
                             <h2 className="text-xl font-semibold mb-4">Edgeble AI Technologies Private Limited</h2>
