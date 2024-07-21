@@ -135,6 +135,28 @@ export default function Home() {
                 </div>
             </motion.div>
 
+            <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="h-[30vh] md:h-[45vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
+>
+    <div className="flex flex-col md:w-3/4 items-center md:items-start">
+        <p className="text-white text-md md:text-lg lg:text-xl xl:text-4xl 2xl:text-5xl 4xl:text-6xl font-semibold tracking-wide leading-normal text-center md:text-left">
+            Edgeble AI Business Portfolio
+        </p>
+        <p className="text-white text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 4xl:text-3xl pt-2 tracking-wide leading-normal text-center md:text-left">
+            Mission on deploying High Performance Ultra-Vision AI Accelerators at the Edge
+        </p>
+    </div>
+    <a href="/contact" className="md:ml-auto">
+        <button className="px-6 2xl:px-10 py-2 2xl:py-3 text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 4xl:text-3xl bg-white transition duration-300 transform hover:scale-110 font-semibold">
+            Check the Overview
+        </button>
+    </a>
+</motion.div>
+
+
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="whats-new">
                 <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
@@ -174,9 +196,9 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="h-[30vh] md:h-[50vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
+                className="h-[30vh] md:h-[45vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
             >
-                <p className="text-white text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
+                <p className="text-white text-md md:text-lg lg:text-xl xl:text-4xl 2xl:text-5xl 4xl:text-6xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
                     Are You Ready To Embrace The Future of Edge-AI
                 </p>
                 <a href="/contact">
