@@ -7,31 +7,31 @@ const products = [
     image: './cardimage1.webp',
     title: 'AI Accelerators',
     description: 'Performance-driven standardized neural compute modules with built-in AI Accelerators that are ready to deploy in any AIoT sectors.',
-    specs: [
-      'NPU: Up to 32TOPS',
-      'Low Power consumption',
-      '8K Video Coding'
-    ],
+    // specs: [
+    //   'NPU: Up to 32TOPS',
+    //   'Low Power consumption',
+    //   '8K Video Coding'
+    // ],
   },
   {
     image: './cardimage2.webp',
     title: 'Machine Vision Sensors',
     description: 'Application-agnostic Camera sensor modules built with robust connectivity for delivering ultra vision Edge AI solutions.',
-    specs: [
-      '4K Pixel Resolution',
-      'Frame rates: 30, 60, 90fps',
-      '4 or 2 lane MIPI CSI2'
-    ],
+    // specs: [
+    //   '4K Pixel Resolution',
+    //   'Frame rates: 30, 60, 90fps',
+    //   '4 or 2 lane MIPI CSI2'
+    // ],
   },
   {
     image: './cardimage3.webp',
     title: 'OpenAIA Ecosystem',
     description: 'Open Source AI Accelerator model management platform which can train, deploy, and update the models powered by DevOps.',
-    specs: [
-      'Open Source OS/Kernel',
-      'Edgeble Model Zoo',
-      'Model Deployment, Update'
-    ],
+    // specs: [
+    //   'Open Source OS/Kernel',
+    //   'Edgeble Model Zoo',
+    //   'Model Deployment, Update'
+    // ],
   },
 ];
 
@@ -46,8 +46,8 @@ const ProductPortfolio: React.FC = () => (
                         }}
                     />
                 </div>
-    <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[450px] 5xl:px-[700px] w-full relative isolate">
-      <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl font-bold mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 text-left">Product Portfolio</h1>
+    <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] w-full relative isolate">
+      <h1 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-12 xl:mb-16 2xl:mb-10 3xl:mb-12 text-left">Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product, index) => (
           <ProductCard
@@ -55,7 +55,7 @@ const ProductPortfolio: React.FC = () => (
             image={product.image}
             title={product.title}
             description={product.description}
-            specs={product.specs}
+            // specs={product.specs}
           />
         ))}
       </div>

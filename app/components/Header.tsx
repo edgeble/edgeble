@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <header className="bg-white fixed inset-x-0 top-0 z-50">
-      <nav className="mx-auto flex items-center justify-between pt-4 4xl:pt-6 pb-4 4xl:pb-6 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[450px] 5xl:px-[700px]" aria-label="Global">
+      <nav className="mx-auto flex items-center justify-between pt-4 4xl:pt-6 pb-4 4xl:pb-6 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
           <img
@@ -64,7 +64,7 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-lg 4xl:text-4xl leading-6 text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-lg 4xl:text-3xl leading-6 text-gray-900">
               Product
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </PopoverButton>
