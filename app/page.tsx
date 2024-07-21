@@ -191,19 +191,19 @@ export default function Home() {
                         What&apos;s New
                     </p>
                     <div className="flex flex-col md:flex-row gap-8">
-                        <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog1.webp" className="w-full object-contain" />
-                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
+                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Embedded World China 2023</p>
                         </div>
 
-                        <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog2.webp" className="w-full object-contain" />
-                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
+                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Edge Computing Expo Europe 2023</p>
                         </div>
 
-                        <div className="z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog3.webp" className="w-full object-contain" />
-                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-4 md:p-6">Talk: AI Vision By Interfacing CSI2 Sensors On Rockchip NPU In Linux</p>
+                            <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Indian Mobile Congress 2023</p>
                         </div>
                     </div>
                     <div
@@ -220,6 +220,7 @@ export default function Home() {
                     </div>
                 </div>
             </motion.div>
+
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
