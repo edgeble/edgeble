@@ -236,45 +236,79 @@ export default function Home() {
                     </button>
                 </a>
             </motion.div>
-            <div className="w-full px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] pt-6 relative isolate">
-                <div className="section w-full">
-                    <div className="mb-4 pb-2 lg:pb-4 2xl:pb-6 4xl:pb-8">
-                        <span className="font-bold text-xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl 4xl:text-8xl text-blue-900 block">Edgeble</span>
-                    </div>
-                    <p className="text-md md:text-lg 3xl:text-xl 4xl:text-3xl text-gray-700">
-                        Edgeble AI Accelerators enable to compute deep learning inferences at the edge by reducing the latency and pacing-up the response time.
-                        These modules use Edgeble AI’s Open Source AI Accelerator model management platform which can train, deploy and update the models powered by DevOps.
-                    </p>
-                </div>
-            </div>
 
             <div className="flex flex-col h-full w-full z-0 bg-white">
                 <div className="flex flex-wrap gap-8 py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]">
-                    <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">AI Accelerators</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">
-                            Edgeble-NCM6A
-                        </a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">
-                            Edgeble-NCM6B
-                        </a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Edgeble-NCM6C</a>
-                    </div>
-                    <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">OpenAIA Ecosystem</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Upstream Linux</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Edgeble Model Zoo</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Edgeble Model Update</a>
-                    </div>
-                    <div className="flex-1 flex flex-col gap-2 min-w-48">
-                        <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">Solutions</p>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Object Detection</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Plant Protection</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Welding Inspection</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">ADAS/AD</a>
-                        <a className="text-grey-700 hover:text-blue-900 hover:underline cursor-pointer md:text-md 3xl:text-lg 4xl:text-2xl">Generative Edge AI</a>
-                    </div>
-                    <div className="flex-1 flex flex-col gap-2 min-w-48">
+                <div className="flex-1 flex flex-col gap-2 min-w-48">
+  <img
+    src="./icon.png"
+    alt="edgeble"
+    className="h-8 w-auto 3xl:h-10 4xl:h-16 mb-2 object-contain self-start"
+  />
+  <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
+    Pre-trained AI Accelerators at the Edge
+  </p>
+  <p className="md:text-md 3xl:text-lg 4xl:text-2xl font-semibold mb-1">
+    India:
+  </p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
+    T-Hub, Raidurgam Panmaktha,
+  </p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
+    Hyderabad Knowledge City,
+  </p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
+    Hyderabad, Telangana 500081, India.
+  </p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl mt-2">
+    info@edgeble.ai
+  </p>
+</div>
+
+<div className="flex-1 flex flex-col gap-2 min-w-48">
+  <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">Edge AI Compute Modules:</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">EAI-CM6 Consumer</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">EAI-CM6 Industrial</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">EAI-CM6 Automotive</p>
+
+  <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">Edge AI-CM6 IO:</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">EAI-CM6 Industrial IO</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">EAI-CM6 Compact IO</p>
+
+  <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">Machine Vision Sensor Modules:</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">EDGEBLE-CAM4K-A00</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">EDGEBLE-CAM2K-A00</p>
+</div>
+
+<div className="flex-1 flex flex-col gap-2 min-w-48">
+  <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">Solutions:</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Vehicle Battery System Welding Inspection</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Plant Protection in Smart Agriculture A</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Smart Quality Control for Manufacturing</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Vehicle Advanced Driver Assistance System (ADAS/AD)</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Smart Supply Chain for Warehouse</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Real-time Edge AI Surveillance</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Cross Border Detection</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Area Intrusion Detection</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Identify Cancer Tissues on Medical Edge</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Multi-lingual Conversational AI at Edge</p>
+</div>
+<div className="flex-1 flex flex-col gap-2 min-w-48">
+  <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">Company:</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">About us</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Mission & Vision</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Leaders & Advisers</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Careers</p>
+
+  <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">What’s New:</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Blog</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Webinars</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">Events</p>
+  <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">White Papers</p>
+</div>
+
+                    {/* below section revise the first column with this */}
+                    {/* <div className="flex-1 flex flex-col gap-2 min-w-48">
                         <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">Contact</p>
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5 flex-shrink-0">
@@ -307,7 +341,7 @@ export default function Home() {
 
                             <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">+91-91000-90959</p>
                         </div>
-                    </div>
+                    </div> */}
                     <SubscribeSection />
                 </div>
                 <div className="w-full h-px bg-gray-600 my-10 mx-8 md:mx-12 lg:mx-16"></div>
