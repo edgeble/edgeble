@@ -53,7 +53,7 @@ const ContactUs = () => {
     return (
         <div className="min-h-screen bg-blue-50 flex flex-col">
             <Header />
-            <div className="w-full h-auto flex flex-col justify-center items-center py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[250px] 4xl:px-[450px] 5xl:px-[700px] relative isolate">
+            <div className="w-full h-auto flex flex-col justify-center items-center py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] relative isolate">
             <h1 className="text-4xl font-bold mb-2 mt-10 text-center">Contact</h1>
                 <p className="text-lg mb-10">GET IN TOUCH</p>
 
