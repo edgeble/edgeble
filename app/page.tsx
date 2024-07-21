@@ -17,7 +17,8 @@ export default function Home() {
         <main className="flex flex-col min-h-screen bg-white w-screen overflow-x-hidden max-w-full relative box-border">
             <Header />
 
-            <div className="min-h-screen relative isolate px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] pt-14 lg:px-8 flex flex-col">
+            <div className="min-h-screen relative isolate px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] pt-14 lg:px-8 flex flex-col"
+                style={{ backgroundImage: 'url("./firstpage.png")', backgroundSize: 'auto 100vh', backgroundPosition: 'right top', width: '100vw', height: '100vh', top: 0, left:0, backgroundRepeat: 'no-repeat'}}>
                 <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                     <div
                         className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -56,7 +57,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="w-full lg:w-1/3 mt-20 md:mt-0">
-                        <img src="./drone.png" className="animate-bounce-slow" />
+                        {/* <img src="./drone.png" className="animate-bounce-slow" /> */}
                     </div>
                 </div>
                 <div
@@ -72,6 +73,16 @@ export default function Home() {
                     />
                 </div>
             </div>
+
+            <motion.div 
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="w-screen h-auto"  // This sets the width to the full screen and auto height
+>
+    <img src="./Nitch1 .png" className="w-full h-auto object-cover" />
+</motion.div>
+
             <div className="overflow-y-auto"><MainComponent /></div>
 
             <div className="overflow-y-auto"><ProductPortfolio /></div>
