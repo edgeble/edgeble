@@ -88,24 +88,52 @@ export default function Home() {
             <div className="overflow-y-auto"><ProductPortfolio /></div>
 
             <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] box-border"
-            >
-                <div className="flex flex-col w-full box-border">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
-                        Solutions
-                    </p>
-                    <div className="flex w-full overflow-hidden gap-0 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4 3xl:gap-5 4xl:gap-6 box-border">
-                        <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
-                        <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
-                        <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
-                        <img src="./s4.png" alt="Solution 4" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
-                        <img src="./s5.png" alt="Solution 5" className="transition-transform duration-300 hover:scale-110 cursor-pointer flex-1 min-w-0 object-cover box-border" />
-                    </div>
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] box-border"
+>
+    <div className="flex flex-col w-full box-border">
+        <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 mb-4 lg:mb-12 xl:mb-16 2xl:mb-10 3xl:mb-12 text-left">
+            Solutions
+        </p>
+        <div className="flex w-full gap-0 md:gap-1 lg:gap-2 xl:gap-3 2xl:gap-4 3xl:gap-5 4xl:gap-6 box-border overflow-hidden">
+            <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
+                <div className="w-full h-full overflow-hidden">
+                    <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-            </motion.div>
+                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Industrial Automation</div>
+            </div>
+            <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
+                <div className="w-full h-full overflow-hidden">
+                    <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
+                </div>
+                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Agriculture</div>
+            </div>
+            <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
+                <div className="w-full h-full overflow-hidden">
+                    <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
+                </div>
+                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Automotive</div>
+            </div>
+            <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
+                <div className="w-full h-full overflow-hidden">
+                    <img src="./s4.png" alt="Solution 4" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
+                </div>
+                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Medicine</div>
+            </div>
+            <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
+                <div className="w-full h-full overflow-hidden">
+                    <img src="./s5.png" alt="Solution 5" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
+                </div>
+                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Defense</div>
+            </div>
+        </div>
+    </div>
+</motion.div>
+
+
+
 
 
 
@@ -159,7 +187,7 @@ export default function Home() {
 
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="whats-new">
                 <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] w-full relative isolate">
-                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-12 xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
+                    <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 mb-4 lg:mb-12 xl:mb-16 2xl:mb-10 3xl:mb-12 text-left">
                         What&apos;s New
                     </p>
                     <div className="flex flex-col md:flex-row gap-8">
