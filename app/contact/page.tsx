@@ -144,7 +144,7 @@ const ContactUs = () => {
                                 <div className="sm:col-span-2">
                                     <button
                                         type="submit"
-                                        className="w-full py-2 px-4 bg-blue-900 text-white font-semibold rounded-md shadow-md hover:bg-blue-700"
+                                        className="w-full py-2 px-4 bg-custom-gradient text-white font-semibold rounded-md shadow-md hover:bg-blue-700"
                                     >
                                         Submit
                                     </button>
