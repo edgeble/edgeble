@@ -102,31 +102,31 @@ export default function Home() {
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Industrial Automation</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">Industrial Automation</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Agriculture</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">Agriculture</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Automotive</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">Automotive</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s4.png" alt="Solution 4" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Medicine</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">Medicine</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s5.png" alt="Solution 5" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Defense</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">Defense</div>
             </div>
         </div>
     </div>
@@ -191,19 +191,19 @@ export default function Home() {
                         What&apos;s New
                     </p>
                     <div className="flex flex-col md:flex-row gap-8">
-                        <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="bg-custom-gradient text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog1.webp" className="w-full object-contain" />
                             <p className="md:text-md 3xl:text-lg 4xl:text-xl pt-2 md:pt-3 pl-2 md:pl-3">Apr 14, 2023</p>
                             <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Embedded World China 2023</p>
                         </div>
 
-                        <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="bg-custom-gradient text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog2.webp" className="w-full object-contain" />
                             <p className="md:text-md 3xl:text-lg 4xl:text-xl pt-2 md:pt-3 pl-2 md:pl-3">Jun 14, 2023</p>
                             <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Edge Computing Expo Europe 2023</p>
                         </div>
 
-                        <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
+                        <div className="bg-custom-gradient text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog3.webp" className="w-full object-contain" />
                             <p className="md:text-md 3xl:text-lg 4xl:text-xl pt-2 md:pt-3 pl-2 md:pl-3">Oct 25, 2023</p>
                             <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Indian Mobile Congress 2023</p>

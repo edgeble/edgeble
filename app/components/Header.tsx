@@ -124,10 +124,10 @@ export default function Header() {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center space-x-4">
-        <a href="/product-inquiry" className="text-lg 4xl:text-xl leading-6 text-white px-4 py-2 rounded bg-gradient-to-l from-black to-blue-900">
+        <a href="/product-inquiry" className="text-lg 4xl:text-xl leading-6 text-white px-4 py-2 rounded bg-custom-gradient">
     Product Inquiry
   </a>
-  <a href="/contact-us" className="text-lg 4xl:text-xl leading-6 text-white px-4 py-2 rounded bg-gradient-to-l from-black to-blue-900">
+  <a href="/contact-us" className="text-lg 4xl:text-xl leading-6 text-white px-4 py-2 rounded bg-custom-gradient">
     Contact Us
   </a>
           <a href="/contact" className="text-lg 4xl:text-xl leading-6 text-gray-900">

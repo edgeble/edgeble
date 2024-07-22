@@ -17,6 +17,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          'custom-gradient': 'linear-gradient(to right, #00274d, #3d5a80 40%, #3d5a80 60%, #00274d)',
       },
       animation: {
         'bounce-slow': 'bounce 5s infinite',
