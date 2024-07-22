@@ -167,7 +167,7 @@ export default function Home() {
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="h-[30vh] md:h-[45vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
+    className="h-[20vh] md:h-[40vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
 >
     <div className="flex flex-col md:w-3/4 items-center md:items-start">
         <p className="text-white text-md md:text-lg lg:text-xl xl:text-4xl 2xl:text-5xl 4xl:text-6xl font-semibold tracking-wide leading-normal text-center md:text-left">
@@ -193,16 +193,19 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog1.webp" className="w-full object-contain" />
+                            <p className="md:text-md 3xl:text-lg 4xl:text-xl pt-2 md:pt-3 pl-2 md:pl-3">Apr 14, 2023</p>
                             <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Embedded World China 2023</p>
                         </div>
 
                         <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog2.webp" className="w-full object-contain" />
+                            <p className="md:text-md 3xl:text-lg 4xl:text-xl pt-2 md:pt-3 pl-2 md:pl-3">Jun 14, 2023</p>
                             <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Edge Computing Expo Europe 2023</p>
                         </div>
 
                         <div className="bg-gradient-to-l from-black to-blue-900 text-white z-0 bg-white flex flex-col shadow-lg md:shadow-md hover:shadow-lg cursor-pointer">
                             <img src="./blog3.webp" className="w-full object-contain" />
+                            <p className="md:text-md 3xl:text-lg 4xl:text-xl pt-2 md:pt-3 pl-2 md:pl-3">Oct 25, 2023</p>
                             <p className="md:text-lg 3xl:text-xl 4xl:text-3xl p-2 md:p-3">Edgeble at Indian Mobile Congress 2023</p>
                         </div>
                     </div>
@@ -225,7 +228,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="h-[30vh] md:h-[45vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
+                className="h-[20vh] md:h-[40vh] bg-gradient-to-l from-black to-blue-900 w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
             >
                 <p className="text-white text-md md:text-lg lg:text-xl xl:text-4xl 2xl:text-5xl 4xl:text-6xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
                     Are You Ready To Embrace The Future of Edge-AI
@@ -263,6 +266,17 @@ export default function Home() {
   <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl mt-2">
     info@edgeble.ai
   </p>
+  <div className="flex space-x-4 mt-2">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 30 30">
+      <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 30 30">
+      <path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+  <path d="M23.953 4.569c-.885.392-1.83.656-2.825.775 1.014-.608 1.794-1.57 2.163-2.723-.951.564-2.005.974-3.127 1.195-.897-.959-2.178-1.56-3.594-1.56-2.717 0-4.918 2.201-4.918 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.734-.666 1.584-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.061c0 2.388 1.698 4.384 3.946 4.835-.413.111-.849.171-1.296.171-.317 0-.626-.03-.927-.087.631 1.953 2.445 3.376 4.6 3.415-1.685 1.32-3.809 2.106-6.114 2.106-.398 0-.79-.023-1.17-.067 2.179 1.397 4.768 2.21 7.557 2.21 9.054 0 14.004-7.496 14.004-13.986 0-.21 0-.42-.015-.63.962-.695 1.8-1.562 2.46-2.549z"></path>
+</svg>
+  </div>
 </div>
 
 <div className="flex-1 flex flex-col gap-2 min-w-48">
@@ -345,7 +359,7 @@ export default function Home() {
                     <SubscribeSection />
                 </div>
                 <div className="w-full h-px bg-gray-600 my-10 mx-8 md:mx-12 lg:mx-16"></div>
-                <div className="w-full flex justify-center items-center gap-4 px-8 md:px-12 lg:px-16 mb-10">
+                {/* <div className="w-full flex justify-center items-center gap-4 px-8 md:px-12 lg:px-16 mb-10">
                     <a className="cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 30 30">
                             <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M19.181,11h-1.729 C16.376,11,16,11.568,16,12.718V14h3.154l-0.428,3H16v7.95C15.671,24.982,15.338,25,15,25c-0.685,0-1.354-0.07-2-0.201V17h-3v-3h3 v-1.611C13,9.339,14.486,8,17.021,8c1.214,0,1.856,0.09,2.16,0.131V11z"></path>
@@ -376,7 +390,7 @@ export default function Home() {
                             <path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
                         </svg>
                     </a>
-                </div>
+                </div> */}
                 <div className="h-12 w-full flex justify-center items-center">
                     <p className="text-[12px] lg:text-sm 2xl:text-md 3xl:text-lg 4xl:text-2xl">© 2024 Edgeble AI Technologies Private Limited.</p>
                 </div>

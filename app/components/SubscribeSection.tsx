@@ -46,7 +46,7 @@ const SubscribeSection = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <button type="submit" className="py-3 bg-blue-900 text-white px-4">Subscribe</button>
+        <button type="submit" className="py-3 bg-gradient-to-l from-black to-blue-900 text-white px-4">Subscribe</button>
       </form>
       {message && <p>{message}</p>}
     </div>
