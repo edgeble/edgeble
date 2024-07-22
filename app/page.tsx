@@ -137,7 +137,7 @@ export default function Home() {
 
 
 
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="ecosystem">
+            {/* <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} className="h-auto w-screen" id="ecosystem">
                 <div className="py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] w-full relative isolate">
                     <p className="text-xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-12 xl:mb-16 2xl:mb-16 3xl:mb-20 4xl:mb-24 text-left">
                         Ecosystem
@@ -161,7 +161,7 @@ export default function Home() {
                         />
                     </div>
                 </div>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
     initial={{ opacity: 0 }}

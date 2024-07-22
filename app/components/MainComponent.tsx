@@ -6,13 +6,14 @@ import Card from './Card';
 const MainComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const videoSources = ['./adas1.mp4', './adas2.mp4', './adas3.mp4', './adas4.mp4', './adas5.mp4'];
+  const videoSources = ['./adas1.mp4', './adas2.mp4', './adas3.mp4', './adas4.mp4', './adas5.mp4', './adas5.mp4'];
   const cardData = [
-    { title: 'Discriminative', description: 'Edge AI', index: 0 },
-    { title: 'Generative', description: 'Edge AI', index: 1 },
-    { title: 'Enhansive', description: 'Edge AI', index: 2 },
-    { title: 'Object Detection', description: 'Edge AI', index: 3 },
-    { title: 'Edgeble Solution', description: 'Edge AI', index: 4 },
+    { title: 'Discriminative', imageUrl: "/burger1.png", index: 0 },
+    { title: 'Generative', imageUrl: "./burger2.png", index: 1 },
+    { title: 'Enhansive', imageUrl: "./burger3.png", index: 2 },
+    { title: 'Object Detection', imageUrl: "./burger4.png", index: 3 },
+    { title: 'Edgeble Solution', imageUrl: "./burger5.png", index: 4 },
+    { title: 'Edgeble Solution', imageUrl: "./burger6.png", index: 5 },
   ];
 
   return (
@@ -35,16 +36,17 @@ const MainComponent = () => {
         </div>
         
         <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-        <div className="order-2 lg:order-1 w-full w-2/5 3xl:w-1/2 4xl:w-7/12">
+        <div className="order-2 lg:order-1 w-full w-3/4">
             {videoSources.map((src, index) => (
               <VideoPlayer key={index} src={src} activeIndex={activeIndex} index={index} />
             ))}
         </div>
-          <div className="order-1 lg:order-2 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/5 3xl:w-1/2 4xl:w-5/12">
-            {cardData.map((card) => (
-              <Card key={card.index} index={card.index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} title={card.title} description={card.description} />
-            ))}
-          </div>
+        <div className="order-1 lg:order-2 w-full grid grid-cols-2 gap-4 w-1/4">
+  {cardData.map((card) => (
+    <Card key={card.index} index={card.index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} title={card.title} imageUrl={card.imageUrl} />
+  ))}
+</div>
+
         </div>
         <div className="rotate-30 absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
           <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-500 to-purple-300 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style={{ clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" }} />
