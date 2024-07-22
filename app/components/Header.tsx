@@ -113,18 +113,18 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
+          <a href="#" className="text-lg 4xl:text-xl leading-6 text-gray-900">
             Blog
           </a>
-          <a href="#ecosystem" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
+          <a href="#ecosystem" className="text-lg 4xl:text-xl leading-6 text-gray-900">
             Pre-Order
           </a>
-          <a href="/about" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
+          <a href="/about" className="text-lg 4xl:text-xl leading-6 text-gray-900">
             Company
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/contact" className="text-lg 4xl:text-4xl leading-6 text-gray-900">
+          <a href="/contact" className="text-lg 4xl:text-xl leading-6 text-gray-900">
             Subscribe <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
