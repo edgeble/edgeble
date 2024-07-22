@@ -5,7 +5,7 @@ import ProductCard from './ProductCard';
 const products = [
   {
     image: './cardimage1.webp',
-    title: 'AI Accelerators',
+    title: 'Edge AI Accelerators',
     description: 'Performance-driven standardized neural compute modules with built-in AI Accelerators that are ready to deploy in any AIoT sectors.',
     // specs: [
     //   'NPU: Up to 32TOPS',
@@ -25,8 +25,8 @@ const products = [
   },
   {
     image: './cardimage3.webp',
-    title: 'OpenAIA Ecosystem',
-    description: 'Open Source AI Accelerator model management platform which can train, deploy, and update the models powered by DevOps.',
+    title: 'EdgeAIA Platform',
+    description: 'Industry first Pre-trained AI inference Open source DevOps lifecycle software platform that train, deploy, and update the models on real-time',
     // specs: [
     //   'Open Source OS/Kernel',
     //   'Edgeble Model Zoo',
