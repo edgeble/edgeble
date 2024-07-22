@@ -102,31 +102,31 @@ export default function Home() {
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s1.png" alt="Solution 1" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Industrial Automation</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Industrial Automation</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s2.png" alt="Solution 2" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Agriculture</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Agriculture</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s3.png" alt="Solution 3" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Automotive</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Automotive</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s4.png" alt="Solution 4" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Medicine</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Medicine</div>
             </div>
             <div className="relative flex-1 min-w-0 overflow-hidden flex flex-col items-center">
                 <div className="w-full h-full overflow-hidden">
                     <img src="./s5.png" alt="Solution 5" className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border" />
                 </div>
-                <div className="w-full py-2 text-center text-white bg-gradient-to-l from-black to-blue-900">Defense</div>
+                <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-gradient-to-l from-black to-blue-900">Defense</div>
             </div>
         </div>
     </div>
