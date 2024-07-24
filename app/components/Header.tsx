@@ -119,11 +119,11 @@ export default function Header() {
           <a href="#ecosystem" className="text-lg 4xl:text-xl leading-6 text-gray-900">
             Pre-Order
           </a>
-          <a href="/about" className="text-lg 4xl:text-xl leading-6 text-gray-900">
+          <a href="/about" className="text-lg 4xl:text-xl leading-6 text-gray-900 pr-4">
             Company
           </a>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center space-x-4">
+        <div className="hidden lg:flex lg:justify-end lg:items-center space-x-4">
         <a href="/product-inquiry" className="text-lg 4xl:text-xl leading-6 text-white px-4 py-2 rounded bg-custom-gradient">
     Product Inquiry
   </a>
