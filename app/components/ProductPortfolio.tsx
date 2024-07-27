@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 
 const products = [
   {
-    image: './cardimage1.png',
+    image: './Home-aia.png',
     title: 'Edge AI Accelerators',
     description: 'Performance-driven standardized neural compute modules with built-in AI Accelerators that are ready to deploy in any AIoT sectors.',
     // specs: [
@@ -14,7 +14,7 @@ const products = [
     // ],
   },
   {
-    image: './cardimage2.png',
+    image: './Home-machine.png',
     title: 'Machine Vision Sensors',
     description: 'Application-agnostic Camera sensor modules built with robust connectivity for delivering ultra vision Edge AI solutions.',
     // specs: [
@@ -24,7 +24,7 @@ const products = [
     // ],
   },
   {
-    image: './cardimage3.png',
+    image: './Home-edgeaia.png',
     title: 'EdgeAIA Platform',
     description: 'Industry first Pre-trained AI inference Open source DevOps lifecycle software platform that train, deploy, and update the models on real-time',
     // specs: [
