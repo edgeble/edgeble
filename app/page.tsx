@@ -250,7 +250,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="h-[20vh] md:h-[20vh] bg-custom-gradient w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
+        className="h-[10vh] bg-custom-gradient w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
       >
         <div className="flex flex-col md:w-3/4 items-center md:items-start">
           <p className="text-white text-md md:text-lg lg:text-xl xl:text-4xl 2xl:text-5xl 4xl:text-6xl font-semibold tracking-wide leading-normal text-center md:text-left">
@@ -329,7 +329,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="h-[20vh] md:h-[20vh] bg-custom-gradient w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
+        className="h-[10vh] bg-custom-gradient w-screen flex flex-col md:flex-row items-center justify-around md:justify-between py-6 md:py-10 lg:py-14 2xl:py-20 3xl:py-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px]"
       >
         <p className="text-white text-md md:text-lg lg:text-xl xl:text-4xl 2xl:text-5xl 4xl:text-6xl md:w-1/2 font-semibold tracking-wide leading-normal text-center md:text-left">
           Are You Ready To Embrace The Future of Edge-AI
