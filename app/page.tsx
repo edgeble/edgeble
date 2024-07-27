@@ -552,7 +552,7 @@ export default function Home() {
                   className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border"
                 />
               </div>
-              <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
+              <div className="w-full py-2 lg:text-[23px] 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
                 Automation
               </div>
             </div>
@@ -564,7 +564,7 @@ export default function Home() {
                   className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border"
                 />
               </div>
-              <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
+              <div className="w-full py-2 lg:text-[23px] 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
                 Agriculture
               </div>
             </div>
@@ -577,7 +577,7 @@ export default function Home() {
                   className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border"
                 />
               </div>
-              <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
+              <div className="w-full py-2 lg:text-[23px] 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
               GenEdgeAI
               </div>
             </div>
@@ -591,7 +591,7 @@ export default function Home() {
                   className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border"
                 />
               </div>
-              <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
+              <div className="w-full py-2 lg:text-[23px] 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
                 Automotive
               </div>
             </div>
@@ -603,7 +603,7 @@ export default function Home() {
                   className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border"
                 />
               </div>
-              <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
+              <div className="w-full py-2 lg:text-[23px] 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
                 Medicine
               </div>
             </div>
@@ -615,7 +615,7 @@ export default function Home() {
                   className="transition-transform duration-300 hover:scale-110 cursor-pointer w-full h-full object-cover box-border"
                 />
               </div>
-              <div className="w-full py-2 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
+              <div className="w-full py-2 lg:text-[23px] 2xl:py-3 3xl:py-4 text-center text-white bg-custom-gradient">
                 Defense
               </div>
             </div>
