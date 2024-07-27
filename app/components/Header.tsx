@@ -48,7 +48,7 @@ export default function Header() {
           <img
     src="./icon.png"
     alt="edgeble"
-    className="h-8 w-auto 3xl:h-10 4xl:h-16"
+    className="h-8 w-auto 3xl:h-[55px] 4xl:h-16"
   />
           </a>
         </div>

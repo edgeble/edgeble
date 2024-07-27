@@ -347,7 +347,7 @@ export default function Home() {
             <img
               src="./icon.png"
               alt="edgeble"
-              className="h-8 w-auto 3xl:h-10 4xl:h-16 mb-2 object-contain self-start"
+              className="h-8 w-auto 3xl:h-[55px] 4xl:h-16 mb-2 object-contain self-start"
             />
             <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
               Pre-trained AI Accelerators at the Edge
