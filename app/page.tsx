@@ -104,17 +104,20 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       className="w-screen h-auto"
     >
-      <div className="w-full h-auto bg-gray-200 flex flex-row md:flex-row lg:flex-row 5xl:justify-between px-[100px] p-5">
+      <div className="
+      flex flex-row md:flex-row lg:flex-row 5xl:justify-between 
+      mb-6 mb:py-10 lg:mb-14 2xl:mb-20 3xl:mb-28 px-8 md:px-18 lg:px-28 2xl:px-38 3xl:px-[300px] 4xl:px-[700px] 5xl:px-[900px] box-border
+      ">
         <div className="flex flex-col md:flex-row items-center w-full md:w-full mb-4 md:mb-0 lg:justify-around ">
           <img src="./thub.png" className="h-[60px] md:h-[80px]" alt="example" />
-          <p className="text-[8px] lg:text-[12px] xl:text-[20px] 2xl:text-[20px] mx-2 md:mx-4 text-center  ">
+          <p className="text-[8px] lg:text-[12px] xl:text-[14px] 2xl:text-[18px] mx-2 md:mx-4 text-center  ">
             Story of being part of AI Scale Up program by MATH & Department Of Science and Technology
           </p>
           <button className="bg-black text-white px-4 py-2  mr-4 ">News</button>
         </div>
         <div className="flex flex-col md:flex-row items-center w-full md:w-full lg:justify-around ">
           <img src="./news.png" className="h-[60px] md:h-[80px]" alt="example" />
-          <p className="text-[8px]  lg:text-[12px] xl:text-[20px] 2xl:text-[20px] mx-2 md:mx-4 text-center">
+          <p className="text-[8px]  lg:text-[12px] xl:text-[14px] 2xl:text-[20px] mx-2 md:mx-4 text-center">
             Identifying Cancer Tissues using advanced ultra vision edge sensing powered by Edgeble AI Acceleration Modules
           </p>
           <button className="bg-black text-white px-4 py-2 mr-4">Usecase</button>
@@ -349,23 +352,19 @@ export default function Home() {
               alt="edgeble"
               className="h-8 w-auto 3xl:h-[55px] 4xl:h-16 mb-2 object-contain self-start"
             />
-            <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
+            <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
               Pre-trained AI Accelerators at the Edge
             </p>
-            <p className="md:text-md 3xl:text-lg 4xl:text-2xl font-semibold mb-1">
+            <p className="md:text-sm 3xl:text-lg 4xl:text-2xl font-semibold mb-1">
               India:
             </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
+            <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
               T-Hub, Raidurgam Panmaktha,
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
+            
               Hyderabad Knowledge City,
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
+            
               Hyderabad, Telangana 500081, India.
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl mt-2">
-              info@edgeble.ai
+            
             </p>
             <div className="flex space-x-4 mt-2">
               <svg
@@ -400,106 +399,87 @@ export default function Home() {
           </div>
 
           <div className="flex-1 flex flex-col gap-2 min-w-48">
-            <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
+            <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
               Edge AI Compute Modules:
             </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              EAI-CM6 Consumer
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              EAI-CM6 Industrial
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              EAI-CM6 Automotive
+            <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
+              EAI-CM6 Consumer<br></br>
+            
+              EAI-CM6 Industrial<br></br>
+            
+              EAI-CM6 Automotive<br></br>
             </p>
 
-            <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">
+            <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">
               Edge AI-CM6 IO:
             </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              EAI-CM6 Industrial IO
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              EAI-CM6 Compact IO
-            </p>
-
-            <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">
+            <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
+              EAI-CM6 Industrial IO<br></br>
+            
+              EAI-CM6 Compact IO<br></br>
+              </p>
+              <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">
               Machine Vision Sensor Modules:
             </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              EDGEBLE-CAM4K-A00
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              EDGEBLE-CAM2K-A00
+              
+            <p>
+              EDGEBLE-CAM4K-A00<br></br>
+            
+              EDGEBLE-CAM2K-A00<br></br>
             </p>
           </div>
 
           <div className="flex-1 flex flex-col gap-2 min-w-48">
-            <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
+            <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
               Solutions:
             </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Vehicle Battery System Welding Inspection
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Plant Protection in Smart Agriculture A
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Smart Quality Control for Manufacturing
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Vehicle Advanced Driver Assistance System (ADAS/AD)
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Smart Supply Chain for Warehouse
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Real-time Edge AI Surveillance
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Cross Border Detection
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Area Intrusion Detection
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Identify Cancer Tissues on Medical Edge
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Multi-lingual Conversational AI at Edge
+            <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
+              Vehicle Battery System Welding Inspection,<br></br>
+            
+              Plant Protection in Smart Agriculture A,<br></br>
+            
+              Smart Quality Control for Manufacturing,<br></br>
+            
+              Vehicle Advanced Driver Assistance System (ADAS/AD),<br></br>
+            
+              Smart Supply Chain for Warehouse,<br></br>
+            
+              Real-time Edge AI Surveillance,<br></br>
+            
+              Cross Border Detection,<br></br>
+            
+              Area Intrusion Detection,<br></br>
+            
+              Identify Cancer Tissues on Medical Edge,<br></br>
+            
+              Multi-lingual Conversational AI at Edge,<br></br>
             </p>
           </div>
           <div className="flex-1 flex flex-col gap-2 min-w-48">
-            <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
+            <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2">
               Company:
             </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              About us
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Mission & Vision
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Leaders & Advisers
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Careers
+            <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
+              About us<br></br>
+            
+              Mission & Vision<br></br>
+            
+              Leaders & Advisers<br></br>
+            
+              Careers<br></br>
             </p>
 
-            <p className="md:text-xl 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">
+            <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">
               What’s New:
             </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Blog
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Webinars
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              Events
-            </p>
-            <p className="text-grey-700 md:text-md 3xl:text-lg 4xl:text-2xl">
-              White Papers
+            <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
+              Blog<br></br>
+            
+              Webinars<br></br>
+            
+              Events<br></br>
+            
+              White Papers<br></br>
             </p>
           </div>
 
