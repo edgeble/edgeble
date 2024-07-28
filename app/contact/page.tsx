@@ -61,9 +61,7 @@ const ContactUs = () => {
                     <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div className="sm:col-span-1">
                             <h2 className="text-xl font-semibold mb-4">Edgeble AI Technologies Private Limited</h2>
-                            <p>T-Hub, 7th floor, DST - CoE AI/ML(MATH),</p>
-                            <p>1/C,83/1, Raidurgam Panmaktha,</p>
-                            <p>Knowledge City, Serilingamapally,</p>
+                            <p>T-Hub, 1/C,83/1, Raidurgam Panmaktha</p>
                             <p>Hyderabad, Telangana 500081, India</p>
                             <p className="mt-4"><strong>Phone</strong><br />+91 91000 90959</p>
                             <p className="mt-4"><strong>Email</strong><br /><a href="mailto:info@edgeble.ai" className="text-blue-900">info@edgeble.ai</a></p>

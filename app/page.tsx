@@ -359,9 +359,9 @@ export default function Home() {
               India:
             </p>
             <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
-              T-Hub, Raidurgam Panmaktha,
-            
-              Hyderabad Knowledge City,
+              T-Hub, 1/C,83,
+
+              Raidurgam Panmaktha,
             
               Hyderabad, Telangana 500081, India.
             
