@@ -52,8 +52,9 @@ export default function Home() {
                 Edge AI Accelerators
               </h1>
               <p className="mt-6 text-lg lg:text-2xl 2xl:text-3xl 3xl:text-4xl leading-8 text-gray-600">
-                Edgeble AI Accelerator Modules enable deep learning inferences
-                at the edge, reducing latency and enhancing response times
+                Unlock AI Potential with Pre-trained Edge AI Accelerator modules: Up to 6TOPS, ultra-low latency, 8K video processing.
+
+		Ready for rapid deployment in consumer, industrial, and automotive sectors.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Link href="/contact" passHref legacyBehavior>
