@@ -419,7 +419,7 @@ export default function Home() {
               EAI-CM6 Compact IO<br></br>
               </p>
               <p className="md:text-md 3xl:text-2xl 4xl:text-4xl font-semibold mb-2 mt-4">
-              Machine Vision Sensor Modules:
+              Machine Vision Cameras:
             </p>
               
             <p>
@@ -434,25 +434,25 @@ export default function Home() {
               Solutions:
             </p>
             <p className="text-grey-700 md:text-sm 3xl:text-lg 4xl:text-2xl">
-              Vehicle Battery System Welding Inspection,<br></br>
+              Vehicle Battery System Welding Inspection<br></br>
             
-              Plant Protection in Smart Agriculture A,<br></br>
+              Plant Protection in Smart Agriculture<br></br>
             
-              Smart Quality Control for Manufacturing,<br></br>
+              Smart Quality Control for Manufacturing<br></br>
             
-              Vehicle Advanced Driver Assistance System (ADAS/AD),<br></br>
+              Vehicle Advanced Driver Assistance System (ADAS/AD)<br></br>
             
-              Smart Supply Chain for Warehouse,<br></br>
+              Smart Supply Chain for Warehouse<br></br>
             
-              Real-time Edge AI Surveillance,<br></br>
+              Real-time Edge AI Surveillance<br></br>
             
-              Cross Border Detection,<br></br>
+              Cross Border Detection<br></br>
             
-              Area Intrusion Detection,<br></br>
+              Area Intrusion Detection<br></br>
             
-              Identify Cancer Tissues on Medical Edge,<br></br>
+              Identify Cancer Tissues<br></br>
             
-              Multi-lingual Conversational AI at Edge,<br></br>
+              Conversational AI at Edge<br></br>
             </p>
           </div>
           <div className="flex-1 flex flex-col gap-2 min-w-48">
